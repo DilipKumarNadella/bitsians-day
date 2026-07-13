@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BITSians' Day 2026 · A Global Celebration of the BITS Legacy</title>
+  <meta name="description" content="BITSians' Day is BITSAA's worldwide celebration connecting BITS Pilani alumni across cities, companies and campuses. Find a meet near you on the interactive map." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <!-- Decorative background -->
+  <div class="bg-aura" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <a href="#home" class="brand" data-tab="home">
+      <span class="brand-mark">B</span>
+      <span class="brand-text">BITSians'&nbsp;Day<em>2026</em></span>
+    </a>
+    <nav class="nav" id="mainNav">
+      <button class="nav-link is-active" data-tab="home">Home</button>
+      <button class="nav-link" data-tab="map">Map</button>
+      <button class="nav-link" data-tab="city">City Meets</button>
+      <button class="nav-link" data-tab="company">Companies</button>
+      <button class="nav-link" data-tab="institute">Campuses</button>
+      <button class="nav-link" data-tab="featured">Featured</button>
+      <button class="nav-link" data-tab="merch">Merch</button>
+      <button class="nav-link" data-tab="contact">Contact</button>
+    </nav>
+    <a class="btn btn-ghost header-cta" data-tab="map">Find a meet</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="tab-panel is-active" id="home" data-tab="home">
+      <div class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow">BITSAA · Worldwide · August 2026</p>
+          <h1 class="hero-title">Wherever life took you,<br /><span>BITS brought you here.</span></h1>
+          <p class="hero-sub">BITSians' Day is the global reunion of the BITS Pilani family — one weekend, hundreds of cities, thousands of stories. Reconnect with your batch, your wing, and your campus, anywhere on Earth.</p>
+          <div class="hero-cta">
+            <button class="btn btn-primary" data-tab="map">Explore the world map</button>
+            <button class="btn btn-outline" data-tab="city">Browse city meets</button>
+          </div>
+          <div class="stats" id="heroStats"></div>
+        </div>
+        <div class="hero-globe" aria-hidden="true">
+          <div class="globe"></div>
+        </div>
+      </div>
+
+      <div class="home-strip">
+        <div class="strip-card" data-tab="city">
+          <span class="strip-ico">🌍</span>
+          <h3>City Meets</h3>
+          <p>Meet fellow BITSians in your city over dinner, drinks and endless nostalgia.</p>
+          <span class="strip-link">See all cities →</span>
+        </div>
+        <div class="strip-card" data-tab="company">
+          <span class="strip-ico">🏢</span>
+          <h3>Company Meets</h3>
+          <p>Find the BITSian network right inside your workplace.</p>
+          <span class="strip-link">See companies →</span>
+        </div>
+        <div class="strip-card" data-tab="institute">
+          <span class="strip-ico">🎓</span>
+          <h3>Campus Meets</h3>
+          <p>Reunite with alumni pursuing higher studies across the globe.</p>
+          <span class="strip-link">See campuses →</span>
+        </div>
+        <div class="strip-card" data-tab="contact">
+          <span class="strip-ico">✉️</span>
+          <h3>Contact</h3>
+          <p>Reach the BITSians' Day and Chapter Relations teams.</p>
+          <span class="strip-link">Get in touch →</span>
+        </div>
+      </div>
+
+      <div class="about">
+        <div class="about-text">
+          <p class="eyebrow">The Story</p>
+          <h2>One family. Many time zones. Endless nostalgia.</h2>
+          <p>Every year, the BITS Pilani Alumni Association brings together graduates from Pilani, Goa, Hyderabad and Dubai for a single, global celebration. From redi runs and wing legends to convocation memories, BITSians' Day is where the campus comes to you.</p>
+          <p>Pick your city on the map, RSVP through your local volunteer, and walk into a room full of people who instantly get every inside joke.</p>
+          <button class="btn btn-primary" data-tab="map">Find your meet</button>
+        </div>
+        <div class="about-grid" id="aboutRegions"></div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="tab-panel" id="map" data-tab="map">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Interactive Map</p>
+          <h2>Find a BITSians' Day meet near you</h2>
+        </div>
+        <div class="map-controls">
+          <input type="search" id="mapSearch" class="input" placeholder="Search a city…" />
+          <div class="region-filter" id="mapRegions"></div>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <div id="leafletMap"></div>
+      </div>
+    </section>
+
+    <!-- CITY MEETS -->
+    <section class="tab-panel" id="city" data-tab="city">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">City Meets</p>
+          <h2>Celebrate in your city</h2>
+        </div>
+        <div class="map-controls">
+          <input type="search" id="citySearch" class="input" placeholder="Search city, venue or host…" />
+          <div class="region-filter" id="cityRegions"></div>
+        </div>
+      </div>
+      <a class="add-cta" href="https://forms.gle/fiweJEFeCkuCZpev9" target="_blank" rel="noopener">
+        <span class="add-cta-text"><b>Don't see your city?</b> Host a BITSians' Day meet in your city.</span>
+        <span class="add-cta-btn">+ Add your city</span>
+      </a>
+      <div class="card-grid" id="cityGrid"></div>
+      <p class="empty-note" id="cityEmpty" hidden>No meets match your search.</p>
+    </section>
+
+    <!-- COMPANY MEETS -->
+    <section class="tab-panel" id="company" data-tab="company">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Company Meets</p>
+          <h2>Your workplace, your wingies</h2>
+        </div>
+        <div class="map-controls">
+          <input type="search" id="companySearch" class="input" placeholder="Search company or city…" />
+        </div>
+      </div>
+      <a class="add-cta" href="https://forms.gle/fiweJEFeCkuCZpev9" target="_blank" rel="noopener">
+        <span class="add-cta-text"><b>Don't see your workplace?</b> Organize a meet at your company.</span>
+        <span class="add-cta-btn">+ Add your company</span>
+      </a>
+      <div class="card-grid compact" id="companyGrid"></div>
+      <p class="empty-note" id="companyEmpty" hidden>No companies match your search.</p>
+    </section>
+
+    <!-- INSTITUTE MEETS -->
+    <section class="tab-panel" id="institute" data-tab="institute">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Campus Meets</p>
+          <h2>BITSians at universities worldwide</h2>
+        </div>
+        <div class="map-controls">
+          <input type="search" id="instituteSearch" class="input" placeholder="Search university or location…" />
+        </div>
+      </div>
+      <a class="add-cta" href="https://forms.gle/fiweJEFeCkuCZpev9" target="_blank" rel="noopener">
+        <span class="add-cta-text"><b>Don't see your campus?</b> Organize a meet at your university or institution.</span>
+        <span class="add-cta-btn">+ Add your campus</span>
+      </a>
+      <div class="card-grid compact" id="instituteGrid"></div>
+      <p class="empty-note" id="instituteEmpty" hidden>No campuses match your search.</p>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="tab-panel" id="featured" data-tab="featured">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Featured Events</p>
+          <h2>Signature moments of the season</h2>
+        </div>
+      </div>
+      <div class="feature-grid" id="featuredGrid"></div>
+    </section>
+
+    <!-- MERCH -->
+    <section class="tab-panel" id="merch" data-tab="merch">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Merchandise</p>
+          <h2>Wear the legacy</h2>
+        </div>
+      </div>
+      <div class="feature-grid" id="merchGrid"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="tab-panel" id="contact" data-tab="contact">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h2>Contact the team</h2>
+        </div>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:bitsiansday@bitsaa.org">
+          <span class="contact-ico">🎉</span>
+          <h3>BITSians' Day</h3>
+          <p>General queries about BITSians' Day events and celebrations.</p>
+          <span class="contact-mail">bitsiansday@bitsaa.org</span>
+        </a>
+        <a class="contact-card" href="mailto:chapter-relations-team@bitsaa.org">
+          <span class="contact-ico">🤝</span>
+          <h3>Chapter Relations Team</h3>
+          <p>Help with setting up or coordinating a chapter or city meet.</p>
+          <span class="contact-mail">chapter-relations-team@bitsaa.org</span>
+        </a>
+      </div>
+
+      <div class="team-section">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">The People</p>
+            <h2>Meet the team</h2>
+          </div>
+        </div>
+        <div id="teamGroups"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="foot-brand">
+      <span class="brand-mark">B</span>
+      <div>
+        <strong>BITSians' Day 2026</strong>
+        <span>Presented by the BITS Pilani Alumni Association</span>
+      </div>
+    </div>
+    <nav class="foot-nav">
+      <button data-tab="map">Map</button>
+      <button data-tab="city">City Meets</button>
+      <button data-tab="company">Companies</button>
+      <button data-tab="contact">Contact</button>
+    </nav>
+  </footer>
+
+  <!-- Detail modal -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

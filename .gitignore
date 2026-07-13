@@ -1,0 +1,11 @@
+# Logs & temp build artifacts
+data/sync.log
+_tmp_*
+_analysis.txt
+__pycache__/
+*.pyc
+
+# OS/editor cruft
+Thumbs.db
+.DS_Store
+.vscode/
