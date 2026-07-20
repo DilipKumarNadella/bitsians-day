@@ -73,13 +73,29 @@
     if (c.lat != null) return "https://www.google.com/maps/search/?api=1&query=" + c.lat + "," + c.lng;
     return "";
   };
+  // Contact-card mailto links auto-CC the Chapter Relations team
+  const CONTACT_CC = "chapter-relations-team@bitsaa.org";
+  const mailtoHref = (email) => `mailto:${esc(email)}?cc=${encodeURIComponent(CONTACT_CC)}`;
+  // Digits-only phone for tel: / WhatsApp links (India default country code when none given)
+  const telDigits = (phone) => String(phone == null ? "" : phone).replace(/[^+\d]/g, "");
+  const telHref = (phone) => `tel:${esc(telDigits(phone))}`;
+  const waHref = (phone) => {
+    let d = telDigits(phone).replace(/^\+/, "");
+    if (d.length === 10) d = "91" + d; // assume India for 10-digit local numbers
+    return `https://wa.me/${d}`;
+  };
   // Clickable contact name (email > phone > plain)
   const contactLink = (c) => {
     const name = esc(c.volunteer);
     if (!name) return "";
-    if (c.email) return `<a href="mailto:${esc(c.email)}">${name}</a>`;
-    if (c.phone) return `<a href="tel:${esc(String(c.phone).replace(/[^+\d]/g, ""))}">${name}</a>`;
+    if (c.email) return `<a href="${mailtoHref(c.email)}">${name}</a>`;
+    if (c.phone) return `<a href="${telHref(c.phone)}">${name}</a>`;
     return `<b>${name}</b>`;
+  };
+  // Phone value: tap-to-call plus a WhatsApp shortcut
+  const phoneLink = (phone) => {
+    if (!phone) return "";
+    return `<a href="${telHref(phone)}">${esc(phone)}</a> · <a href="${waHref(phone)}" target="_blank" rel="noopener">WhatsApp</a>`;
   };
 
   /* ---------------- Tab navigation ---------------- */
@@ -162,7 +178,7 @@
   let map, cluster, markers = [];
 
   function makeIcon(color) {
-    const svg = `<svg class="marker-pin" width="30" height="40" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg"><path d="M15 0C6.7 0 0 6.7 0 15c0 10.5 15 25 15 25s15-14.5 15-25C30 6.7 23.3 0 15 0z" fill="${color}"/><circle cx="15" cy="15" r="6" fill="#0a1024"/></svg>`;
+    const svg = `<svg class="marker-pin" width="30" height="40" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg"><path d="M15 0C6.7 0 0 6.7 0 15c0 10.5 15 25 15 25s15-14.5 15-25C30 6.7 23.3 0 15 0z" fill="${color}"/><circle cx="15" cy="15" r="6" fill="#ffffff"/></svg>`;
     return L.divIcon({ className: "", html: svg, iconSize: [30, 40], iconAnchor: [15, 40], popupAnchor: [0, -36] });
   }
 
@@ -181,7 +197,7 @@
   function initMap() {
     map = L.map("leafletMap", { worldCopyJump: true, scrollWheelZoom: true, minZoom: 2 }).setView([22, 30], 2);
     map.attributionControl.setPrefix(false); // drop the "Leaflet" flag, keep required data credit
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
       attribution: '&copy; OSM &copy; CARTO', subdomains: "abcd", maxZoom: 19,
     }).addTo(map);
 
@@ -391,7 +407,7 @@
     if (!c) return;
     const actions = [];
     if (isUrl(c.registration)) actions.push(`<a class="btn btn-primary" href="${esc(c.registration)}" target="_blank" rel="noopener">Register now</a>`);
-    if (c.email) actions.push(`<a class="btn btn-outline" href="mailto:${esc(c.email)}">Email host</a>`);
+    if (c.email) actions.push(`<a class="btn btn-outline" href="${mailtoHref(c.email)}">Email host</a>`);
     if (c.lat != null) actions.push(`<a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=${c.lat},${c.lng}" target="_blank" rel="noopener">Open in Maps</a>`);
     openModal(`
       <span class="m-region" style="color:${regionColor(c.region)}">${esc(c.region)} · City Meet</span>
@@ -399,8 +415,8 @@
       ${block("🕒", "When", esc(c.time))}
       ${block("📍", "Venue", c.venue ? `<a href="${mapsUrl(c)}" target="_blank" rel="noopener">${esc(c.venue)}</a>` : "")}
       ${block("👤", "Point of Contact", contactLink(c) || esc(c.volunteer))}
-      ${block("✉️", "Email", c.email ? `<a href="mailto:${esc(c.email)}">${esc(c.email)}</a>` : "")}
-      ${block("📞", "Phone", esc(c.phone))}
+      ${block("✉️", "Email", c.email ? `<a href="${mailtoHref(c.email)}">${esc(c.email)}</a>` : "")}
+      ${block("📞", "Phone", phoneLink(c.phone))}
       ${block("🔗", "Registration", isUrl(c.registration) ? linkify(c.registration) : esc(c.registration))}
       ${block("ℹ️", "Details", esc(c.notes))}
       <div class="m-actions">${actions.join("")}</div>`);
@@ -413,8 +429,9 @@
       <h2 class="m-title">${esc(c.company)}</h2>
       ${block("📍", "City", esc(c.city))}
       ${block("👤", "Point of Contact", esc(c.volunteer))}
-      ${block("✉️", "Email", c.email ? `<a href="mailto:${esc(c.email)}">${esc(c.email)}</a>` : "")}
-      <div class="m-actions">${c.email ? `<a class="btn btn-primary" href="mailto:${esc(c.email)}">Reach out</a>` : ""}</div>`);
+      ${block("✉️", "Email", c.email ? `<a href="${mailtoHref(c.email)}">${esc(c.email)}</a>` : "")}
+      ${block("📞", "Phone", phoneLink(c.phone))}
+      <div class="m-actions">${c.email ? `<a class="btn btn-primary" href="${mailtoHref(c.email)}">Reach out</a>` : ""}</div>`);
   }
 
   function openInstituteModal(c) {
@@ -424,8 +441,9 @@
       <h2 class="m-title">${esc(c.institute)}</h2>
       ${block("📍", "Location", esc(c.location))}
       ${block("👤", "Point of Contact", esc(c.volunteer))}
-      ${block("✉️", "Email", c.email ? `<a href="mailto:${esc(c.email)}">${esc(c.email)}</a>` : "")}
-      <div class="m-actions">${c.email ? `<a class="btn btn-primary" href="mailto:${esc(c.email)}">Reach out</a>` : ""}</div>`);
+      ${block("✉️", "Email", c.email ? `<a href="${mailtoHref(c.email)}">${esc(c.email)}</a>` : "")}
+      ${block("📞", "Phone", phoneLink(c.phone))}
+      <div class="m-actions">${c.email ? `<a class="btn btn-primary" href="${mailtoHref(c.email)}">Reach out</a>` : ""}</div>`);
   }
 
   document.addEventListener("click", (e) => {
