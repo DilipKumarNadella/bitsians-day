@@ -136,7 +136,7 @@
     const stats = [
       { n: cityMeets.length, l: "City Meets" },
       { n: regionsPresent.length, l: "Regions" },
-      { n: companyMeets.length, l: "Company Meets" },
+      // { n: companyMeets.length, l: "Company Meets" }, // hidden for now
       { n: instituteMeets.length, l: "Campuses" },
     ];
     $("#heroStats").innerHTML = stats.map((s) => `<div class="stat"><b data-count="${s.n}">0</b><span>${s.l}</span></div>`).join("");
