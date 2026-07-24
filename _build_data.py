@@ -414,6 +414,22 @@ with open(r"d:\xampp\htdocs\Bitsian_day\assets\data.js", "w", encoding="utf-8") 
     json.dump(data, f, ensure_ascii=False)
     f.write(";\n")
 
+# ---------- Cache-bust data.js in index.html ----------
+# Stamp a fresh ?v=<timestamp> onto the data.js <script> tag so browsers and
+# CDNs always fetch the newly written data instead of a cached copy.
+INDEX_PATH = r"d:\xampp\htdocs\Bitsian_day\index.html"
+try:
+    with open(INDEX_PATH, encoding="utf-8") as f:
+        _html = f.read()
+    _ver = int(time.time())
+    _new_html = re.sub(r'(src="assets/data\.js)(\?v=\d+)?(")', rf'\g<1>?v={_ver}\g<3>', _html)
+    if _new_html != _html:
+        with open(INDEX_PATH, "w", encoding="utf-8") as f:
+            f.write(_new_html)
+        print("cache-busted data.js in index.html -> v=", _ver)
+except Exception as e:
+    print("index.html cache-bust skipped:", e)
+
 geocoded = sum(1 for c in city_meets if c["lat"] is not None)
 print("SUMMARY")
 print("city meets:", len(city_meets), "geocoded:", geocoded)

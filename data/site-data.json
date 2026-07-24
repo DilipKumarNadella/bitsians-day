@@ -2,13 +2,13 @@
  "cityMeets": [
   {
    "city": "Ahmedabad",
-   "volunteer": "Mr. K. K. Gupta",
-   "email": "kkgupta.cnctex@gmail.com",
-   "phone": "9727373953",
+   "volunteer": "Bhavin, Srisunder",
+   "email": "bitsaa.ahd@gmail.com",
+   "phone": "9923600422, 7043846348",
    "region": "India",
    "time": "",
-   "venue": "",
-   "registration": "",
+   "venue": "Friday, 14th August from 5.00 PM onwards",
+   "registration": "Crystal Hall, Taj Skyline, Sankalp Square-III, Sindhu Bhavan Rd, opp. Saket 3, nr. Neelkanth Green, PRL Colony, Thaltej, Shilaj, Ahmedabad, Gujarat 380058",
    "notes": "",
    "lat": 23.02154,
    "lng": 72.58006,
@@ -21,17 +21,17 @@
    "phone": "9352240003",
    "region": "India",
    "time": "",
-   "venue": "",
-   "registration": "",
+   "venue": "TBA soon",
+   "registration": "TBC soon",
    "notes": "",
-   "lat": 26.4691,
-   "lng": 74.639,
-   "precise": false
+   "lat": 1.33621,
+   "lng": 103.76456,
+   "precise": true
   },
   {
    "city": "Amsterdam, Netherlands",
-   "volunteer": "Rachit Kumar, Sneha",
-   "email": "rachitkl@outlook.com",
+   "volunteer": "Sneha Challa",
+   "email": "",
    "phone": "(+31) 6 26475713",
    "region": "Europe",
    "time": "Updated with new data",
@@ -77,8 +77,8 @@
    "phone": "404-229-8156",
    "region": "US/Canada",
    "time": "",
-   "venue": "",
-   "registration": "",
+   "venue": "Saturday, 8th August from 7PM onwards",
+   "registration": "Venue TBA soon",
    "notes": "",
    "lat": 33.75447,
    "lng": -84.38982,
@@ -169,14 +169,28 @@
    "precise": false
   },
   {
+   "city": "Bentonville, AR",
+   "volunteer": "Mahish Lodha",
+   "email": "mahishkumar.lodha@gmail.com",
+   "phone": "479-721-0639",
+   "region": "US/Canada",
+   "time": "",
+   "venue": "",
+   "registration": "",
+   "notes": "",
+   "lat": 36.37286,
+   "lng": -94.20879,
+   "precise": false
+  },
+  {
    "city": "Bhilwara",
    "volunteer": "Sanjeev Lodha, Shantilal Shrimal",
    "email": "",
    "phone": "9414115151, 9829045387",
    "region": "India",
    "time": "Updated with new data",
-   "venue": "August 9, 08:00 onward",
-   "registration": "https://maps.app.goo.gl/34Hj2xeMTi535zMR6",
+   "venue": "Sunday, 9th August from 8 AM onwards",
+   "registration": "Smriti Van Garden, Bhilwara, Rajasthan 311001",
    "notes": "",
    "lat": 25.47099,
    "lng": 74.69613,
@@ -679,9 +693,9 @@
    "phone": "7689956766",
    "region": "India",
    "time": "",
-   "venue": "",
-   "registration": "",
-   "notes": "",
+   "venue": "Saturday, August 8th from 4PM onwards",
+   "registration": "Miami by Guwahati Heights, MG Rd, opposite to FISH MARKET, Uzan Bazar, Guwahati, Assam 781001",
+   "notes": "https://www.bitsaa.org/e/bitsians-day-2026-guwahati/",
    "lat": 26.1806,
    "lng": 91.75394,
    "precise": false
@@ -805,9 +819,9 @@
    "phone": "9929094130",
    "region": "India",
    "time": "",
-   "venue": "",
-   "registration": "",
-   "notes": "",
+   "venue": "Saturday, August 8th from 6PM onwards",
+   "registration": "Jaipur Marriott Hotel, Ashram Marg, near Jawahar Circle, Jai Jawan-2, Choti Chopad, Chandrakala Colony, Durgapura, Jaipur, Rajasthan 302015",
+   "notes": "https://www.bitsaa.org/e/bitsians-day-2026-jaipur/",
    "lat": 26.91546,
    "lng": 75.81898,
    "precise": false
@@ -827,17 +841,17 @@
    "precise": false
   },
   {
-   "city": "New Jersey",
-   "volunteer": "Prachi Bansal, Srikanth Subramaniam",
-   "email": "prachi.bansal87@gmail.com, srikant.subramaniam@bitsaa.org",
-   "phone": "917-371-9537",
-   "region": "US/Canada",
-   "time": "Info not available in the bitsian day sheet",
+   "city": "Jakarta, Indonesia",
+   "volunteer": "Rajat Sagar",
+   "email": "",
+   "phone": "62 816-820-681",
+   "region": "APAC",
+   "time": "",
    "venue": "",
    "registration": "",
    "notes": "",
-   "lat": 40.07574,
-   "lng": -74.40416,
+   "lat": -6.1754,
+   "lng": 106.82717,
    "precise": false
   },
   {
@@ -861,9 +875,9 @@
    "phone": "(+91) 86988 52559",
    "region": "India",
    "time": "Updated with new data",
-   "venue": "",
-   "registration": "",
-   "notes": "",
+   "venue": "Sunday, August 9th from 6PM onwards",
+   "registration": "The Bengal Lounge, 6, Netaji Subhas Rd, Loha Patti, Bara Bazar, Jorasanko, Kolkata, West Bengal 700001",
+   "notes": "https://www.theticket9.com/event/bitsaakol-bd26",
    "lat": 22.57265,
    "lng": 88.3639,
    "precise": false
@@ -926,7 +940,7 @@
   },
   {
    "city": "London, UK",
-   "volunteer": "Vidya Narasimhan, Sahil Shirbate, Teja Sai Perala, Srikar Nagelli, Parrivesh N S,",
+   "volunteer": "Vidya Narasimhan, Sahil Shirbate, Teja Sai Perala, Parrivesh N S,",
    "email": "bitsaa-uk@bitsaa.org, vidyanarasimha@gmail.com",
    "phone": "+44 7526170025",
    "region": "Europe",
@@ -954,14 +968,14 @@
   },
   {
    "city": "Lucknow",
-   "volunteer": "Sarthak Goel",
-   "email": "f20160334g@alumni.bits-pilani.ac.in",
-   "phone": "9936642456",
+   "volunteer": "Aman Kumar Gupta",
+   "email": "202217b3005@wilp.bits-pilani.ac.in",
+   "phone": "8808801791",
    "region": "India",
    "time": "",
-   "venue": "",
-   "registration": "",
-   "notes": "",
+   "venue": "Saturday, 8th August from 7PM onwards",
+   "registration": "The Grand JBR, CF-129, Viraj Khand Rd, Viraj Khand-4, Viraj Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010",
+   "notes": "https://www.bitsaa.org/e/bitsian-s-day-2026-lucknow/",
    "lat": 26.8381,
    "lng": 80.9346,
    "precise": false
@@ -1009,6 +1023,20 @@
    "precise": false
   },
   {
+   "city": "Meerut, India",
+   "volunteer": "Kunal Gupta",
+   "email": "gupta.kunal29@gmail.com",
+   "phone": "90455 44497",
+   "region": "India",
+   "time": "",
+   "venue": "",
+   "registration": "",
+   "notes": "",
+   "lat": 28.9845,
+   "lng": 77.7064,
+   "precise": false
+  },
+  {
    "city": "Melbourne",
    "volunteer": "Sanjiv Tolat",
    "email": "s_tolat@hotmail.com",
@@ -1024,14 +1052,14 @@
   },
   {
    "city": "Miami, FL",
-   "volunteer": "Prasad BSRK",
-   "email": "prasadbsrk421@gmail.com",
+   "volunteer": "Prasad Batchu",
+   "email": "prasadbsrk8@gmail.com",
    "phone": "607-279-6901",
    "region": "US/Canada",
    "time": "",
-   "venue": "",
-   "registration": "",
-   "notes": "",
+   "venue": "Saturday August 8th from 4 PM to 8PM",
+   "registration": "Funky Buddha Brewery, 1201 NE 38th St, Fort Lauderdale, FL 33334, United States",
+   "notes": "https://www.bitsaa.org/e/bitsians-day-2026-miami-fl/",
    "lat": 25.77416,
    "lng": -80.1936,
    "precise": false
@@ -1066,8 +1094,8 @@
   },
   {
    "city": "Mumbai",
-   "volunteer": "Sukhie Vohra, Rowshini, Shivangini",
-   "email": "sukhnandan.vohra@bitsaa.org, rows.kvg@gmail.com,shivangini.mukherjee@gmail.com",
+   "volunteer": "Sukhnandan Vohra",
+   "email": "Sukhiephotos@gmail.com",
    "phone": "9820021627",
    "region": "India",
    "time": "",
@@ -1108,9 +1136,9 @@
   },
   {
    "city": "Nagpur",
-   "volunteer": "Kaustubh Agarwal",
+   "volunteer": "Sparsh Maheshwari",
    "email": "",
-   "phone": "7728835969",
+   "phone": "",
    "region": "India",
    "time": "",
    "venue": "",
@@ -1160,6 +1188,20 @@
    "notes": "",
    "lat": 36.16228,
    "lng": -86.7743,
+   "precise": false
+  },
+  {
+   "city": "New Jersey",
+   "volunteer": "Prachi Bansal, Srikanth Subramaniam",
+   "email": "prachi.bansal87@gmail.com, srikant.subramaniam@bitsaa.org",
+   "phone": "917-371-9537",
+   "region": "US/Canada",
+   "time": "Info not available in the bitsian day sheet",
+   "venue": "",
+   "registration": "",
+   "notes": "",
+   "lat": 40.07574,
+   "lng": -74.40416,
    "precise": false
   },
   {
@@ -1290,13 +1332,13 @@
   },
   {
    "city": "Philadelphia",
-   "volunteer": "Sparsh Maheshwari",
-   "email": "maheshwarisparsh@gmail.com",
-   "phone": "857-829-9020",
+   "volunteer": "Vishal Ugle",
+   "email": "vishalugle@gmail.com",
+   "phone": "+1 (513) 302‑7696",
    "region": "US/Canada",
    "time": "",
-   "venue": "",
-   "registration": "",
+   "venue": "Saturday August 8th from 6PM onwards",
+   "registration": "City Works (King of Prussia Town Center - King of Prussia), 220 Main St, King of Prussia, PA 19406, United States",
    "notes": "",
    "lat": 39.95272,
    "lng": -75.16353,
@@ -1346,7 +1388,7 @@
   },
   {
    "city": "Pune",
-   "volunteer": "Jiten Divgi\nKunjan Gandhi",
+   "volunteer": "Jiten Divgi, Kunjan Gandhi",
    "email": "jbdivgi@divgi-tts.com, ksgindia@gmail.com",
    "phone": "83800 76515, 9004040626",
    "region": "India",
@@ -1360,9 +1402,9 @@
   },
   {
    "city": "Purdue, IN",
-   "volunteer": "Abhimanyu Raj Shekhar",
-   "email": "abhimanyu.rajshekhar@gmail.com",
-   "phone": "7652407679",
+   "volunteer": "Vignesh Sathyaseelan",
+   "email": "vsathyas@purdue.edu",
+   "phone": "765-746-9445",
    "region": "US/Canada",
    "time": "",
    "venue": "",
@@ -1374,9 +1416,9 @@
   },
   {
    "city": "Raleigh-Durham, NC",
-   "volunteer": "Aashish Ahuja",
-   "email": "aash.ahuja@gmail.com",
-   "phone": "510-289-3872",
+   "volunteer": "Gopal Sadige",
+   "email": "gopal.sadige@gmail.com",
+   "phone": "336-686-8745",
    "region": "US/Canada",
    "time": "",
    "venue": "",
@@ -1520,8 +1562,8 @@
    "region": "India",
    "time": "",
    "venue": "",
-   "registration": "",
-   "notes": "",
+   "registration": "Tea Post, Shop No 14/15, Ground Floor, Zircon Plus, Dabholi Rd, opp. Avalon Commercial Hub, Sahyog Society, Katargam, Surat, Gujarat 395004",
+   "notes": "https://www.bitsaa.org/e/bitsians-day-2026-surat/",
    "lat": 21.1702,
    "lng": 72.8311,
    "precise": false
@@ -1776,34 +1818,6 @@
    "notes": "",
    "lat": 39.74595,
    "lng": -75.54659,
-   "precise": false
-  },
-  {
-   "city": "Hongkong",
-   "volunteer": "Mitul Salecha",
-   "email": "",
-   "phone": "91 9619477891",
-   "region": "APAC",
-   "time": "",
-   "venue": "",
-   "registration": "",
-   "notes": "",
-   "lat": 22.28183,
-   "lng": 114.15828,
-   "precise": false
-  },
-  {
-   "city": "Jakarta, Indonesia",
-   "volunteer": "Rajat Sagar",
-   "email": "",
-   "phone": "62 816-820-681",
-   "region": "APAC",
-   "time": "",
-   "venue": "",
-   "registration": "",
-   "notes": "",
-   "lat": -6.1754,
-   "lng": 106.82717,
    "precise": false
   }
  ],
@@ -2478,6 +2492,277 @@
    "campaignPage": "https://www.bitsaa.org/g/bit-by-bit-for-bits"
   }
  ],
- "team": [],
+ "team": [
+  {
+   "name": "Chapter Relations - Leads",
+   "members": [
+    {
+     "name": "Srikar Goud Nagelli",
+     "role": "Lead",
+     "email": "srikar.goud@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=11v6L_sM8_X62h1tCE8R8HAyEqIXMBdcD&sz=w1000"
+    },
+    {
+     "name": "Mayur Patnala",
+     "role": "Lead",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    }
+   ]
+  },
+  {
+   "name": "Chapter Relations - India",
+   "members": [
+    {
+     "name": "Amreen",
+     "role": "Chapter Coordinator",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    },
+    {
+     "name": "Shruti Rastogi",
+     "role": "Chapter Coordinator",
+     "email": "shruti.rastogi@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1WQbcfDFVOFqzQyaqdghBDBiSJVGYTZ9e&sz=w1000"
+    },
+    {
+     "name": "Shubham Agrawal",
+     "role": "Chapter Coordinator",
+     "email": "shubham.a@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1lcxznes7KF1Pob9YF-23sS-tG4UJ_1Fx&sz=w1000"
+    },
+    {
+     "name": "Aryan Kohli",
+     "role": "Chapter Coordinator",
+     "email": "aryan.k@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1HkFnmi8rrgA9WAPxHRct9EtSJEXiyuC0&sz=w1000"
+    },
+    {
+     "name": "Priyansh Garg",
+     "role": "Chapter Coordinator",
+     "email": "priyansh.g@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1QxUaRmKT86KGmi42ALxz5ryKrIxdAB1K&sz=w1000"
+    }
+   ]
+  },
+  {
+   "name": "Chapter Relations - Americas",
+   "members": [
+    {
+     "name": "Mayuri Mutha",
+     "role": "Chapter Coordinator",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    },
+    {
+     "name": "Swetha K",
+     "role": "Chapter Coordinator",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    },
+    {
+     "name": "Khushi Agrawal",
+     "role": "Chapter Coordinator",
+     "email": "khushi.agrawal@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1yAqRKz_XxGh2fjumCz7YEaGzRzbDWciy&sz=w1000"
+    },
+    {
+     "name": "Koundinya",
+     "role": "Chapter Coordinator",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    }
+   ]
+  },
+  {
+   "name": "Chapter Relations - APAC",
+   "members": [
+    {
+     "name": "Oindrilla",
+     "role": "Chapter Coordinator",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    },
+    {
+     "name": "Vanshika Sri",
+     "role": "Chapter Coordinator",
+     "email": "vanshika.sri@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=10HK0OlGsxKz2MVUxwN26f5jTmUm10pSa&sz=w1000"
+    }
+   ]
+  },
+  {
+   "name": "Chapter Relations - Middle East & RoW",
+   "members": [
+    {
+     "name": "Oishika Sarkar",
+     "role": "Chapter Coordinator",
+     "email": "oishika.sarkar@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1KU1qCQvyZjWsLu3lkp8lHvk125a74ND7&sz=w1000"
+    },
+    {
+     "name": "Sreethi Reddy",
+     "role": "Chapter Coordinator",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    }
+   ]
+  },
+  {
+   "name": "Chapter Relations - Europe",
+   "members": [
+    {
+     "name": "Nirlipta",
+     "role": "Chapter Coordinator",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    },
+    {
+     "name": "Aditya Bhatt",
+     "role": "Chapter Coordinator",
+     "email": "aditya.b@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1ryxxb3yJNjzNRmBWRYGOOq-Dvi7LtFB4&sz=w1000"
+    },
+    {
+     "name": "Aditya Anand",
+     "role": "Chapter Coordinator",
+     "email": "aditya.anand@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1-rY4IV2z2KOCINPhOdbre9N1Os4FxogG&sz=w1000"
+    },
+    {
+     "name": "Manish Mallavarapu",
+     "role": "Chapter Coordinator",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    }
+   ]
+  },
+  {
+   "name": "Company Ambassador Network",
+   "members": [
+    {
+     "name": "Jaya Pavan Yalamati",
+     "role": "Company Ambassador Network",
+     "email": "jaya.pavan@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1erRc9n1h5_uGNIRqMz_j_kEwPQitiMKc&sz=w1000"
+    },
+    {
+     "name": "Praannjal Sethi",
+     "role": "Company Ambassador Network",
+     "email": "praannjal.sethi@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1yFT-mUYQxdnhAem8fhHR0emafvPZvjsT&sz=w1000"
+    },
+    {
+     "name": "Chandrahas",
+     "role": "Company Ambassador Network",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    }
+   ]
+  },
+  {
+   "name": "App & Tech",
+   "members": [
+    {
+     "name": "Dilip Nadella",
+     "role": "Tech",
+     "email": "dilip.nadella@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1IaiMai4F06vNnEeUUsaF9WjB4nhTPAIu&sz=w1000"
+    }
+   ]
+  },
+  {
+   "name": "Other Initiatives",
+   "members": [
+    {
+     "name": "Chandu Reddy",
+     "role": "Volunteer",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    },
+    {
+     "name": "Chandrahas",
+     "role": "Volunteer",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    },
+    {
+     "name": "Shanthan",
+     "role": "Volunteer",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    },
+    {
+     "name": "Sparsh Maheshwari",
+     "role": "Volunteer",
+     "email": "",
+     "linkedin": "",
+     "photo": ""
+    }
+   ]
+  },
+  {
+   "name": "Marketing & Communications",
+   "members": [
+    {
+     "name": "Satamitra Ghosh Dastidar",
+     "role": "Marketing & Communications",
+     "email": "satamitra.ghoshd@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1mVFmmgdR-bEJGc3AvSNc5R-isDICXWMj&sz=w1000"
+    }
+   ]
+  },
+  {
+   "name": "Finance",
+   "members": [
+    {
+     "name": "Nithya Kocherlakota",
+     "role": "Finance",
+     "email": "nithya.k@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1mgLxrdBPRpGoZWbv4w3w6VY4qspkPeTd&sz=w1000"
+    }
+   ]
+  },
+  {
+   "name": "People Strategy",
+   "members": [
+    {
+     "name": "Kushal Rathi",
+     "role": "People Strategy",
+     "email": "kushal.rathi@bitsaa.org",
+     "linkedin": "",
+     "photo": "https://drive.google.com/thumbnail?id=1pa9nZbLeZNdeAot4DAIz1FHV-4s4rToN&sz=w1000"
+    }
+   ]
+  }
+ ],
  "merchLinks": []
 }

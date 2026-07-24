@@ -387,11 +387,30 @@
     const el = $("#teamGroups");
     if (!el) return;
     const groups = (Array.isArray(DATA.team) && DATA.team.length) ? DATA.team : TEAM_GROUPS;
-    el.innerHTML = groups.map((g) => `
-      <div class="team-group">
-        <h3 class="team-group-title">${esc(g.name)}</h3>
+
+    // These groups sit under their own "Core Teams" collapsible section
+    const CORE = ["marketing & communications", "finance", "people strategy"];
+    const crSubs = [], coreSubs = [];
+    groups.forEach((g) => {
+      (CORE.includes(String(g.name).trim().toLowerCase()) ? coreSubs : crSubs).push(g);
+    });
+
+    // Drop a leading "Chapter Relations - " so subheadings read cleanly
+    const subLabel = (name) => String(name).replace(/^\s*chapter\s+relations\s*[-–—:·]\s*/i, "").trim() || name;
+
+    const subAccordion = (g) => `
+      <details class="team-sub">
+        <summary class="team-sub-title">${esc(subLabel(g.name))}<span class="team-sub-count">${(g.members || []).length}</span></summary>
         <div class="team-grid">${(g.members || []).map(memberCard).join("")}</div>
-      </div>`).join("");
+      </details>`;
+
+    const parent = (title, subs) => subs.length ? `
+      <details class="team-parent" open>
+        <summary class="team-parent-title">${esc(title)}</summary>
+        <div class="team-sub-list">${subs.map(subAccordion).join("")}</div>
+      </details>` : "";
+
+    el.innerHTML = parent("Chapter Relations", crSubs) + parent("Core Teams", coreSubs);
   }
 
   /* ---------------- MODAL ---------------- */

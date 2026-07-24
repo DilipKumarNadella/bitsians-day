@@ -349,6 +349,24 @@ body {
 }
 .team-icon:hover { color: var(--white); background: var(--red); border-color: var(--red); transform: translateY(-2px); }
 
+/* ---------- Collapsible team (Chapter Relations accordion) ---------- */
+.team-parent { border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); margin-bottom: 24px; overflow: hidden; }
+.team-parent > summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 22px; font-family: var(--font-display); font-weight: 700; font-size: clamp(20px, 2.6vw, 24px); color: var(--charcoal); }
+.team-parent > summary::-webkit-details-marker { display: none; }
+.team-parent > summary::after { content: ""; width: 11px; height: 11px; border-right: 2px solid var(--red); border-bottom: 2px solid var(--red); transform: rotate(-45deg); transition: transform 0.25s var(--ease); flex: none; }
+.team-parent[open] > summary::after { transform: rotate(45deg); }
+.team-parent > summary:hover { color: var(--red); }
+.team-sub-list { padding: 0 16px 14px; display: grid; gap: 10px; }
+
+.team-sub { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--bg); }
+.team-sub > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 10px; padding: 13px 16px; font-weight: 500; font-size: 15px; color: var(--charcoal); }
+.team-sub > summary::-webkit-details-marker { display: none; }
+.team-sub > summary::after { content: ""; margin-left: auto; width: 8px; height: 8px; border-right: 2px solid var(--subtle); border-bottom: 2px solid var(--subtle); transform: rotate(-45deg); transition: transform 0.25s var(--ease); flex: none; }
+.team-sub[open] > summary { color: var(--red); background: var(--white); }
+.team-sub[open] > summary::after { transform: rotate(45deg); border-color: var(--red); }
+.team-sub-count { font-size: 12px; font-weight: 600; color: var(--red); background: var(--red-soft); border-radius: 999px; padding: 2px 9px; }
+.team-sub .team-grid { padding: 8px 16px 18px; }
+
 /* ---------- Modal ---------- */
 /* z-index must clear Leaflet's panes/controls (which go up to ~1000) */
 .modal { position: fixed; inset: 0; z-index: 2000; display: grid; place-items: center; padding: 20px; }
