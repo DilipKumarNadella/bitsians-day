@@ -405,7 +405,7 @@
       </details>`;
 
     const parent = (title, subs) => subs.length ? `
-      <details class="team-parent" open>
+      <details class="team-parent">
         <summary class="team-parent-title">${esc(title)}</summary>
         <div class="team-sub-list">${subs.map(subAccordion).join("")}</div>
       </details>` : "";
