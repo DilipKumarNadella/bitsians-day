@@ -76,26 +76,31 @@
   // Contact-card mailto links auto-CC the Chapter Relations team
   const CONTACT_CC = "chapter-relations-team@bitsaa.org";
   const mailtoHref = (email) => `mailto:${esc(email)}?cc=${encodeURIComponent(CONTACT_CC)}`;
-  // Digits-only phone for tel: / WhatsApp links (India default country code when none given)
-  const telDigits = (phone) => String(phone == null ? "" : phone).replace(/[^+\d]/g, "");
-  const telHref = (phone) => `tel:${esc(telDigits(phone))}`;
-  const waHref = (phone) => {
-    let d = telDigits(phone).replace(/^\+/, "");
+  // City-meet "phone" fields are WhatsApp numbers (sometimes several, comma/slash separated)
+  const splitNumbers = (phone) => String(phone == null ? "" : phone)
+    .split(/[,/;&\n]|\band\b/i)
+    .map((s) => s.trim())
+    .filter((s) => /\d/.test(s));
+  const waDigits = (num) => {
+    let d = String(num).replace(/[^\d+]/g, "").replace(/^\+/, "");
     if (d.length === 10) d = "91" + d; // assume India for 10-digit local numbers
-    return `https://wa.me/${d}`;
+    return d;
   };
-  // Clickable contact name (email > phone > plain)
+  const waHref = (num) => `https://wa.me/${waDigits(num)}`;
+  // Clickable contact name (email > WhatsApp > plain)
   const contactLink = (c) => {
     const name = esc(c.volunteer);
     if (!name) return "";
     if (c.email) return `<a href="${mailtoHref(c.email)}">${name}</a>`;
-    if (c.phone) return `<a href="${telHref(c.phone)}">${name}</a>`;
+    const nums = splitNumbers(c.phone);
+    if (nums.length) return `<a href="${waHref(nums[0])}" target="_blank" rel="noopener">${name}</a>`;
     return `<b>${name}</b>`;
   };
-  // Phone value: tap-to-call plus a WhatsApp shortcut
+  // WhatsApp value: one link per number (handles multiple numbers)
   const phoneLink = (phone) => {
-    if (!phone) return "";
-    return `<a href="${telHref(phone)}">${esc(phone)}</a> · <a href="${waHref(phone)}" target="_blank" rel="noopener">WhatsApp</a>`;
+    const nums = splitNumbers(phone);
+    if (!nums.length) return "";
+    return nums.map((n) => `<a href="${waHref(n)}" target="_blank" rel="noopener">${esc(n)}</a>`).join(" · ");
   };
 
   /* ---------------- Tab navigation ---------------- */
@@ -335,7 +340,7 @@
           <div class="feature-links">${links.join("")}</div>
         </div>
       </article>`;
-    }).join("") || '<p class="empty-note">Featured events will be announced soon.</p>';
+    }).join("") || '<p class="empty-note">Initiatives will be announced soon.</p>';
   }
 
   function renderMerch() {
@@ -435,7 +440,7 @@
       ${block("📍", "Venue", c.venue ? `<a href="${mapsUrl(c)}" target="_blank" rel="noopener">${esc(c.venue)}</a>` : "")}
       ${block("👤", "Point of Contact", contactLink(c) || esc(c.volunteer))}
       ${block("✉️", "Email", c.email ? `<a href="${mailtoHref(c.email)}">${esc(c.email)}</a>` : "")}
-      ${block("📞", "Phone", phoneLink(c.phone))}
+      ${block("�", "WhatsApp", phoneLink(c.phone))}
       ${block("🔗", "Registration", isUrl(c.registration) ? linkify(c.registration) : esc(c.registration))}
       ${block("ℹ️", "Details", esc(c.notes))}
       <div class="m-actions">${actions.join("")}</div>`);
@@ -449,7 +454,7 @@
       ${block("📍", "City", esc(c.city))}
       ${block("👤", "Point of Contact", esc(c.volunteer))}
       ${block("✉️", "Email", c.email ? `<a href="${mailtoHref(c.email)}">${esc(c.email)}</a>` : "")}
-      ${block("📞", "Phone", phoneLink(c.phone))}
+      ${block("�", "WhatsApp", phoneLink(c.phone))}
       <div class="m-actions">${c.email ? `<a class="btn btn-primary" href="${mailtoHref(c.email)}">Reach out</a>` : ""}</div>`);
   }
 
@@ -461,7 +466,7 @@
       ${block("📍", "Location", esc(c.location))}
       ${block("👤", "Point of Contact", esc(c.volunteer))}
       ${block("✉️", "Email", c.email ? `<a href="${mailtoHref(c.email)}">${esc(c.email)}</a>` : "")}
-      ${block("📞", "Phone", phoneLink(c.phone))}
+      ${block("�", "WhatsApp", phoneLink(c.phone))}
       <div class="m-actions">${c.email ? `<a class="btn btn-primary" href="${mailtoHref(c.email)}">Reach out</a>` : ""}</div>`);
   }
 
