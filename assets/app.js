@@ -141,7 +141,7 @@
     const stats = [
       { n: cityMeets.length, l: "City Meets" },
       { n: regionsPresent.length, l: "Regions" },
-      // { n: companyMeets.length, l: "Company Meets" }, // hidden for now
+      { n: companyMeets.length, l: "Company Meets" },
       { n: instituteMeets.length, l: "Campuses" },
     ];
     $("#heroStats").innerHTML = stats.map((s) => `<div class="stat"><b data-count="${s.n}">0</b><span>${s.l}</span></div>`).join("");
@@ -320,24 +320,29 @@
   }
   function shortText(s, n = 240) { s = String(s || "").replace(/\*\*/g, "").replace(/_/g, ""); return s.length > n ? s.slice(0, n).trim() + "…" : s; }
 
+  // Extract URLs from a free-text field + format a multi-line description
+  const urlsIn = (s) => String(s == null ? "" : s).match(/https?:\/\/[^\s)\]]+/g) || [];
+  const resLabel = (u, i) => /youtube|youtu\.be|spotify/i.test(u) ? "Watch / Listen"
+    : /forms\.gle|docs\.google\.com\/forms/i.test(u) ? "Form"
+    : /drive\.google/i.test(u) ? "Attachment"
+    : "Resource " + (i + 1);
+  const formatDesc = (s) => esc(String(s == null ? "" : s)).replace(/\r/g, "")
+    .split(/\n{2,}/).filter((p) => p.trim())
+    .map((p) => `<p>${p.replace(/^[*+]\s?/gm, "• ").replace(/\n/g, "<br>")}</p>`).join("");
+
   function renderFeatured() {
-    $("#featuredGrid").innerHTML = featured.map((f) => {
-      const meta = [f.type, f.organizer].filter(Boolean).map((m) => `<span class="pill">${esc(m)}</span>`).join("");
-      const links = [];
-      if (isUrl(f.registration)) links.push(`<a class="mini-link" href="${esc(f.registration)}" target="_blank" rel="noopener">Register</a>`);
-      if (isUrl(f.community)) links.push(`<a class="mini-link" href="${esc(f.community)}" target="_blank" rel="noopener">Community</a>`);
-      (f.videos || []).slice(0, 3).forEach((v, i) => { if (isUrl(v)) links.push(`<a class="mini-link" href="${esc(v)}" target="_blank" rel="noopener">Video ${i + 1}</a>`); });
-      if (isUrl(f.spotify)) links.push(`<a class="mini-link" href="${esc(f.spotify)}" target="_blank" rel="noopener">Spotify</a>`);
-      const when = f.timeIST || f.timeLocal;
-      return `<article class="feature-card">
+    $("#featuredGrid").innerHTML = featured.map((f, i) => {
+      const email = f.pocEmail ? `<a href="mailto:${esc(f.pocEmail)}">${esc(f.pocEmail)}</a>` : "";
+      const poc = (f.poc || email)
+        ? `<p class="feature-poc">👤 ${esc(f.poc)}${f.poc && email ? " · " : ""}${email}</p>` : "";
+      const link = isUrl(f.link) ? `<a class="mini-link" href="${esc(f.link)}" target="_blank" rel="noopener">Link</a>` : "";
+      return `<article class="feature-card is-clickable" data-open-featured="${i}">
         ${mediaHtml(f.image, f.name)}
         <div class="feature-body">
           <h3>${esc(f.name)}</h3>
-          <div class="feature-meta">${meta}</div>
-          ${when ? `<p><strong>🕒 ${esc(when)}</strong></p>` : ""}
-          ${f.details ? `<p class="clamp">${esc(shortText(f.details, 200))}</p>` : ""}
-          ${f.poc ? `<p style="font-size:13px;color:var(--ink-faint)">Contact: ${esc(f.poc)}</p>` : ""}
-          <div class="feature-links">${links.join("")}</div>
+          ${f.team ? `<div class="feature-meta"><span class="pill">${esc(f.team)}</span></div>` : ""}
+          ${poc}
+          <div class="feature-foot">${link}<span class="mc-link feature-more">View details →</span></div>
         </div>
       </article>`;
     }).join("") || '<p class="empty-note">Initiatives will be announced soon.</p>';
@@ -466,8 +471,25 @@
       ${block("📍", "Location", esc(c.location))}
       ${block("👤", "Point of Contact", esc(c.volunteer))}
       ${block("✉️", "Email", c.email ? `<a href="${mailtoHref(c.email)}">${esc(c.email)}</a>` : "")}
-      ${block("�", "WhatsApp", phoneLink(c.phone))}
+      ${block("💬", "WhatsApp", phoneLink(c.phone))}
       <div class="m-actions">${c.email ? `<a class="btn btn-primary" href="${mailtoHref(c.email)}">Reach out</a>` : ""}</div>`);
+  }
+
+  function openFeaturedModal(f) {
+    if (!f) return;
+    const email = f.pocEmail ? `<a href="mailto:${esc(f.pocEmail)}">${esc(f.pocEmail)}</a>` : "";
+    const links = [];
+    urlsIn(f.resources).forEach((u, i) => links.push(`<a class="mini-link" href="${esc(u)}" target="_blank" rel="noopener">${resLabel(u, i)}</a>`));
+    if (isUrl(f.link)) links.push(`<a class="mini-link" href="${esc(f.link)}" target="_blank" rel="noopener">Link</a>`);
+    if (isUrl(f.moreInfo)) links.push(`<a class="mini-link" href="${esc(f.moreInfo)}" target="_blank" rel="noopener">More info</a>`);
+    if (isUrl(f.community)) links.push(`<a class="mini-link" href="${esc(f.community)}" target="_blank" rel="noopener">Community</a>`);
+    openModal(`
+      <span class="m-region" style="color:var(--red)">${esc(f.team || "BITSAA Initiative")}</span>
+      <h2 class="m-title">${esc(f.name)}</h2>
+      ${f.image ? `<div class="feature-banner"><img src="${esc(f.image)}" alt="${esc(f.name)}" onerror="this.closest('.feature-banner').remove()"/></div>` : ""}
+      ${(f.poc || email) ? `<div class="m-poc">👤 ${esc(f.poc)}${f.poc && email ? " · " : ""}${email}</div>` : ""}
+      ${f.description ? `<div class="m-desc">${formatDesc(f.description)}</div>` : ""}
+      ${links.length ? `<div class="links-note" style="margin-top:16px">Links &amp; resources</div><div class="feature-links">${links.join("")}</div>` : ""}`);
   }
 
   document.addEventListener("click", (e) => {
@@ -477,6 +499,8 @@
     if (co) return openCompanyModal(companyMeets[+co.dataset.openCompany]);
     const ci = e.target.closest("[data-open-institute]");
     if (ci) return openInstituteModal(instituteMeets[+ci.dataset.openInstitute]);
+    const ff = e.target.closest("[data-open-featured]");
+    if (ff && !e.target.closest("a")) return openFeaturedModal(featured[+ff.dataset.openFeatured]);
   });
 
   /* ---------------- Wire up ---------------- */

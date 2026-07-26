@@ -294,6 +294,19 @@ body {
 .feature-body h3 { font-family: var(--font-display); font-weight: 700; font-size: 22px; line-height: 1.15; color: var(--charcoal); }
 .feature-body p { color: var(--muted); font-size: 14px; }
 .feature-meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0; }
+.feature-card.is-clickable { cursor: pointer; }
+.feature-poc { font-size: 13px; color: var(--muted); }
+.feature-poc a { color: var(--red); word-break: break-word; }
+.feature-more { margin-top: auto; padding-top: 8px; font-weight: 500; color: var(--red); }
+.feature-foot { margin-top: auto; padding-top: 10px; display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.feature-foot .feature-more { margin-top: 0; padding-top: 0; }
+.feature-banner { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin: 4px 0 18px; }
+.feature-banner img { width: 100%; height: auto; display: block; }
+.m-poc { font-size: 14px; color: var(--muted); margin-bottom: 14px; }
+.m-poc a { color: var(--red); word-break: break-word; }
+.m-desc { color: var(--charcoal); font-size: 14.5px; line-height: 1.65; }
+.m-desc p { margin: 0 0 12px; }
+.m-desc p:last-child { margin-bottom: 0; }
 .pill { font-size: 12px; font-weight: 400; color: var(--muted); background: var(--bg); border: 1px solid var(--border); border-radius: 999px; padding: 5px 11px; }
 .feature-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 8px; }
 .mini-link { font-size: 12.5px; font-weight: 500; color: var(--red); text-decoration: none; border: 1px solid var(--border); padding: 7px 13px; border-radius: 4px; transition: background 0.2s, border-color 0.2s; }
@@ -336,10 +349,10 @@ body {
   width: 92px; height: 92px; border-radius: 50%; position: relative; overflow: hidden;
   display: grid; place-items: center; margin-bottom: 14px;
   background: var(--red-soft);
-  border: 2px solid rgba(192, 0, 30, 0.2);
+  box-shadow: inset 0 0 0 2px rgba(192, 0, 30, 0.2);
 }
 .team-avatar::before { content: attr(data-initials); font-family: var(--font-display); font-weight: 700; font-size: 30px; color: var(--red); }
-.team-avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.team-avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .team-name { font-family: var(--font-display); font-weight: 700; font-size: 17px; color: var(--charcoal); }
 .team-role { color: var(--subtle); font-size: 13px; font-weight: 400; margin-top: 2px; }
 .team-links { display: flex; gap: 10px; margin-top: 14px; }

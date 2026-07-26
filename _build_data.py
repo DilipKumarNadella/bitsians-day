@@ -106,6 +106,47 @@ def drive_direct(url):
     return u
 
 
+# Google Drive throttles many simultaneous image requests, so download each
+# image ONCE at build time and serve it from our own /assets/img folder.
+IMG_DIR = r"d:\xampp\htdocs\Bitsian_day\assets\img"
+os.makedirs(IMG_DIR, exist_ok=True)
+
+
+def _drive_id(url):
+    u = clean(url)
+    m = re.search(r"/d/([A-Za-z0-9_-]+)", u) or re.search(r"[?&]id=([A-Za-z0-9_-]+)", u)
+    return m.group(1) if m else None
+
+
+def cache_image(url, size="w600"):
+    """Download a Google-Drive image locally and return a site-relative path.
+    Non-Drive URLs are returned unchanged. Falls back to the Drive thumbnail
+    URL only if the download fails after retries."""
+    if not clean(url):
+        return ""
+    fid = _drive_id(url)
+    if not fid:
+        return clean(url)  # already a normal URL — leave as-is
+    dest = os.path.join(IMG_DIR, fid + ".jpg")
+    rel = "assets/img/" + fid + ".jpg"
+    if os.path.exists(dest) and os.path.getsize(dest) > 1500:
+        return rel  # cached
+    src = f"https://drive.google.com/thumbnail?id={fid}&sz={size}"
+    for attempt in range(3):
+        try:
+            r = requests.get(src, timeout=30)
+            ctype = r.headers.get("content-type", "")
+            if r.status_code == 200 and ctype.startswith("image") and len(r.content) > 1500:
+                with open(dest, "wb") as f:
+                    f.write(r.content)
+                return rel
+        except Exception as e:
+            print("image download error", fid, e)
+        time.sleep(1.5 * (attempt + 1))  # backoff
+    print("could not fetch image", fid, "- keeping Drive URL")
+    return f"https://drive.google.com/thumbnail?id={fid}&sz=w1000"
+
+
 # ---------- City Meets ----------
 rows = sheet_rows("City Meets")
 header = rows[0]
@@ -289,22 +330,20 @@ for r in rows[1:]:
     name = clean(r[0])
     if not name:
         continue
-    videos = [clean(r[i]) for i in range(11, 16) if len(r) > i and clean(r[i])]
+    # Sheet columns: Event name | Image URL | Responsible Team | Chapter/Community Link
+    #                | Point of Contact | POC email | Description | Useful resources
+    #                | More Info Link | Link
     featured.append({
         "name": name,
-        "image": drive_direct(r[1]) if len(r) > 1 else "",
-        "organizer": clean(r[2]) if len(r) > 2 else "",
+        "image": cache_image(r[1], "w1000") if len(r) > 1 else "",
+        "team": clean(r[2]) if len(r) > 2 else "",
         "community": clean(r[3]) if len(r) > 3 else "",
         "poc": clean(r[4]) if len(r) > 4 else "",
         "pocEmail": clean(r[5]) if len(r) > 5 else "",
-        "timeIST": clean(r[6]) if len(r) > 6 else "",
-        "timeLocal": clean(r[7]) if len(r) > 7 else "",
-        "type": clean(r[8]) if len(r) > 8 else "",
-        "details": clean(r[9]) if len(r) > 9 else "",
-        "registration": clean(r[10]) if len(r) > 10 else "",
-        "videos": videos,
-        "spotify": clean(r[16]) if len(r) > 16 else "",
-        "resource": clean(r[17]) if len(r) > 17 else "",
+        "description": clean(r[6]) if len(r) > 6 else "",
+        "resources": clean(r[7]) if len(r) > 7 else "",
+        "moreInfo": clean(r[8]) if len(r) > 8 else "",
+        "link": clean(r[9]) if len(r) > 9 else "",
     })
 
 # ---------- Merchandise ----------
@@ -317,7 +356,7 @@ for r in rows[1:]:
     links = [clean(r[i]) for i in range(3, 12) if len(r) > i and clean(r[i])]
     merch.append({
         "name": name,
-        "image": drive_direct(r[1]) if len(r) > 1 else "",
+        "image": cache_image(r[1], "w1000") if len(r) > 1 else "",
         "description": clean(r[2]) if len(r) > 2 else "",
         "links": links,
     })
@@ -335,7 +374,7 @@ for r in rows[1:]:
         continue
     donate.append({
         "name": name,
-        "image": drive_direct(r[1]) if len(r) > 1 else "",
+        "image": cache_image(r[1], "w1000") if len(r) > 1 else "",
         "description": clean(r[2]) if len(r) > 2 else "",
         "donateUSD": clean(r[3]) if len(r) > 3 else "",
         "donateINR": clean(r[4]) if len(r) > 4 else "",
@@ -380,7 +419,7 @@ if _team_rows:
             "role": clean(r[2]) if len(r) > 2 else "",
             "email": clean(r[3]) if len(r) > 3 else "",
             "linkedin": clean(r[4]) if len(r) > 4 else "",
-            "photo": drive_direct(r[5]) if len(r) > 5 and clean(r[5]) else "",
+            "photo": cache_image(r[5], "w400") if len(r) > 5 and clean(r[5]) else "",
         })
 
 # ---------- Merch region links (tab: Region | Link) ----------
