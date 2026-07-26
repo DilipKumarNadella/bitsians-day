@@ -326,9 +326,13 @@
     : /forms\.gle|docs\.google\.com\/forms/i.test(u) ? "Form"
     : /drive\.google/i.test(u) ? "Attachment"
     : "Resource " + (i + 1);
+  const mdInline = (s) => s
+    .replace(/\*\*_([^*_]+?)_\*\*/g, "<strong>$1</strong>")
+    .replace(/\*\*([^*]+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/(^|[^_\w])_([^_]+?)_(?!\w)/g, "$1<em>$2</em>");
   const formatDesc = (s) => esc(String(s == null ? "" : s)).replace(/\r/g, "")
     .split(/\n{2,}/).filter((p) => p.trim())
-    .map((p) => `<p>${p.replace(/^[*+]\s?/gm, "• ").replace(/\n/g, "<br>")}</p>`).join("");
+    .map((p) => `<p>${mdInline(p.replace(/^[*+]\s?/gm, "• ").replace(/\n/g, "<br>"))}</p>`).join("");
 
   function renderFeatured() {
     $("#featuredGrid").innerHTML = featured.map((f, i) => {
@@ -348,22 +352,26 @@
     }).join("") || '<p class="empty-note">Initiatives will be announced soon.</p>';
   }
 
+  // Identify a shop URL's region + flag from its domain
+  function shopRegion(u) {
+    u = String(u || "");
+    if (/indipeepal/i.test(u)) return ["India", "\uD83C\uDDEE\uD83C\uDDF3"];
+    const m = u.match(/amazon\.([a-z.]+?)(?:[\/?]|$)/i);
+    const tld = m ? m[1].toLowerCase() : "";
+    return ({
+      "com": ["US", "\uD83C\uDDFA\uD83C\uDDF8"], "co.uk": ["UK", "\uD83C\uDDEC\uD83C\uDDE7"], "de": ["Germany", "\uD83C\uDDE9\uD83C\uDDEA"],
+      "fr": ["France", "\uD83C\uDDEB\uD83C\uDDF7"], "es": ["Spain", "\uD83C\uDDEA\uD83C\uDDF8"], "it": ["Italy", "\uD83C\uDDEE\uD83C\uDDF9"], "co.jp": ["Japan", "\uD83C\uDDEF\uD83C\uDDF5"],
+    })[tld] || ["Shop", "\uD83D\uDECD\uFE0F"];
+  }
+
   function renderMerch() {
-    const regionLinks = (Array.isArray(DATA.merchLinks) && DATA.merchLinks.length) ? DATA.merchLinks : TSHIRT_REGION_LINKS;
-    $("#merchGrid").innerHTML = merch.map((m) => {
-      let links;
-      if (/t-?shirt/i.test(m.name)) {
-        links = `<span class="links-note">Shop by region</span>` +
-          regionLinks.map(([label, url]) => `<a class="mini-link" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join("");
-      } else {
-        links = (m.links || []).map((l, i) => `<a class="mini-link" href="${esc(l)}" target="_blank" rel="noopener">${i === 0 ? "Shop" : "Link " + (i + 1)}</a>`).join("");
-      }
-      return `<article class="feature-card">
+    $("#merchGrid").innerHTML = merch.map((m, i) => {
+      return `<article class="feature-card is-clickable" data-open-merch="${i}">
         ${mediaHtml(m.image, m.name)}
         <div class="feature-body">
           <h3>${esc(m.name)}</h3>
-          <p class="clamp">${esc(shortText(m.description, 220))}</p>
-          <div class="feature-links">${links}</div>
+          <p class="clamp">${esc(shortText(m.description, 150))}</p>
+          <div class="feature-foot"><span class="mc-link feature-more">View details &amp; buy \u2192</span></div>
         </div>
       </article>`;
     }).join("") || '<p class="empty-note">Merchandise drops soon.</p>';
@@ -492,6 +500,22 @@
       ${links.length ? `<div class="links-note" style="margin-top:16px">Links &amp; resources</div><div class="feature-links">${links.join("")}</div>` : ""}`);
   }
 
+  function openMerchModal(m) {
+    if (!m) return;
+    const buyUrls = (Array.isArray(m.links) && m.links.length) ? m.links
+      : (Array.isArray(DATA.merchLinks) && DATA.merchLinks.length ? DATA.merchLinks.map((x) => Array.isArray(x) ? x[1] : x) : TSHIRT_REGION_LINKS.map((x) => x[1]));
+    const buys = buyUrls.filter(isUrl).map((u) => {
+      const [r] = shopRegion(u);
+      return `<a class="merch-buy" href="${esc(u)}" target="_blank" rel="noopener">${esc(r)}</a>`;
+    }).join("");
+    openModal(`
+      <span class="m-region" style="color:var(--red)">Merchandise</span>
+      <h2 class="m-title">${esc(m.name)}</h2>
+      ${m.image ? `<div class="feature-banner"><img src="${esc(m.image)}" alt="${esc(m.name)}" onerror="this.closest('.feature-banner').remove()"/></div>` : ""}
+      ${m.description ? `<div class="m-desc">${formatDesc(m.description)}</div>` : ""}
+      ${buys ? `<div class="links-note" style="margin-top:18px">Choose your region to order</div><div class="merch-buys">${buys}</div>` : ""}`);
+  }
+
   document.addEventListener("click", (e) => {
     const cc = e.target.closest("[data-open-city]");
     if (cc && !cc.closest(".leaflet-popup")) return openCityModal(cityMeets[+cc.dataset.openCity]);
@@ -501,6 +525,8 @@
     if (ci) return openInstituteModal(instituteMeets[+ci.dataset.openInstitute]);
     const ff = e.target.closest("[data-open-featured]");
     if (ff && !e.target.closest("a")) return openFeaturedModal(featured[+ff.dataset.openFeatured]);
+    const cm = e.target.closest("[data-open-merch]");
+    if (cm && !e.target.closest("a")) return openMerchModal(merch[+cm.dataset.openMerch]);
   });
 
   /* ---------------- Wire up ---------------- */

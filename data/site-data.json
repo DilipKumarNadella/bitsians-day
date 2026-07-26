@@ -2184,25 +2184,17 @@
  "merchandise": [
   {
    "name": "Official BITSians' Day Tshirt",
-   "image": "assets/img/1zeosnyxvAdAi4_m2q6ulpZFc3Nnf0eoI.jpg",
-   "description": "Orders in India are brought to you by **_Indipeepal_** All BITSAA proceeds after paying the vendor will be donated to BITS\n\nOrders in the USA, UK, Germany, France, Italy, Spain, and Japan are brought to you by **_Sigo Entreprise._**\n\nSpecial Mentions:\n\nKudos to Sigo Entreprise (**_Surendra Malu, 2001 Batch_**) for their generous contribution by donating the entire profit from BITS merchandise sales.\n\nCongratulations to our T-shirt design contest winners: **Aditya Malhotra** and **Bartik Pandel.** Their creativity has truly captured the spirit and legacy of BITS Pilani.\n\nA heartfelt thank you to **_Siraj Naik_** (BITS Pilani marketing team) for creating the amazing 60 years poster that inspired Bartik's winning design.\n\nLet's come together to make this BITSians' Day an unforgettable celebration of our shared heritage and bright future. Wear your T-shirt with pride and be a part of this historic moment!",
+   "image": "assets/img/1GNASBjXO4IwUZnbpD267sFSPxLLMRAJI.jpg",
+   "description": "Orders in India are brought to you by **_Indipeepal_** All BITSAA proceeds after paying the vendor will be donated to BITS\n\nOrders in the USA, UK, Germany, France, Italy, Spain, and Japan are brought to you by Sigo Enterprise\n\nSpecial Mentions:\n\nKudos to Sigo Entreprise (**_Surendra Malu, 2001 Batch_**) for their generous contribution by donating the entire profit from BITS merchandise sales.\n\nCongratulations to our T-shirt design contest winner: Sairaj Naik. His creativity has truly captured the spirit and legacy of BITS Pilani.\n\nLet's come together to make this BITSians' Day an unforgettable celebration of our shared heritage and bright future. Wear your T-shirt with pride and be a part of this historic moment!",
    "links": [
-    "https://indipeepal.com/collections/bitsians-day-2024",
-    "https://amzn.to/4eM86aa",
-    "https://amzn.to/4bt53AI",
-    "https://amzn.to/4cwyOSM",
-    "https://amzn.to/3W5iUsD",
-    "https://amzn.to/3XU36dH",
-    "https://amzn.to/4eQ5U18",
-    "https://amzn.to/4bsT8CT"
-   ]
-  },
-  {
-   "name": "Reconnect with a BITS Postcard",
-   "image": "assets/img/1dB_tINKz6JT4BVq6eBhcwzYrVcyqMeYd.jpg",
-   "description": "In the age of emails and video calls, let's send postcards to our wingies, club-mates, juniors, seniors, book moms/dads, professors, guards, redi bhaiyas, and everyone who made your BITS journey special! Presenting the BITS Pilani Postcard series by Harshikha Gupta (Pilani '13). Revive memories and share handwritten messages that will be cherished for years to come. \n🕒Within India, delivery time is ~3-5 days. India link : https://www.harshispostcards.com/ \n📧For international orders pls drop an email at harshispostcards@gmail.com",
-   "links": [
-    "https://www.harshispostcards.com/"
+    "https://indipeepal.com/collections/bits-pilani-collection",
+    "https://www.amazon.com/stores/page/preview?isPreview=1&isSlp=1&asins=B0H7PCS3SR,B0H7PDWSTF,B0H7PJBQ7B&tag=",
+    "https://www.amazon.co.uk/stores/page/preview?isPreview=1&isSlp=1&asins=B0H7PFBZK9,B0H7PJMPN7&tag=",
+    "https://www.amazon.de/stores/page/preview?isPreview=1&isSlp=1&asins=B0H7P64M8R,B0H7PHQSSX&tag=",
+    "https://www.amazon.fr/stores/page/preview?isPreview=1&isSlp=1&asins=B0H7P4DVST,B0H7PPXHGP&tag=",
+    "https://www.amazon.es/stores/page/preview?isPreview=1&isSlp=1&asins=B0H7P5WDBW,B0H7PPMQM9&tag=",
+    "https://www.amazon.it/stores/page/preview?isPreview=1&isSlp=1&asins=B0H7P69PHZ,B0H7PGYXVX&tag=",
+    "https://www.amazon.co.jp/stores/page/preview?isPreview=1&isSlp=1&asins=B0H7P5PGCS,B0H7P91SCS&tag="
    ]
   }
  ],
@@ -2273,20 +2265,6 @@
      "email": "priyansh.g@bitsaa.org",
      "linkedin": "",
      "photo": "assets/img/1QxUaRmKT86KGmi42ALxz5ryKrIxdAB1K.jpg"
-    },
-    {
-     "name": "Suraj Gupta",
-     "role": "Chapter Coordinator",
-     "email": "suraj.gupta@bitsaa.org",
-     "linkedin": "",
-     "photo": "assets/img/1Ca7jNjZrrAMr2zlC2FcjVDEwHWQITW2w.jpg"
-    },
-    {
-     "name": "K Srikanth",
-     "role": "Chapter Coordinator",
-     "email": "ksrikanth@bitsaa.org",
-     "linkedin": "",
-     "photo": "assets/img/11zUJGQIAwsg7WqYwBVH9f0sYOg5HmR_8.jpg"
     }
    ]
   },
