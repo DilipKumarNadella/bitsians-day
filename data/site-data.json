@@ -71,7 +71,7 @@
    "precise": true
   },
   {
-   "city": "Sydney Lunch meet - Parramatta",
+   "city": "Sydney Lunch meet - CBD",
    "volunteer": "Prashant Mohan",
    "email": "prashant.mohan@gmail.com",
    "phone": "(+61)434212136",
@@ -189,11 +189,11 @@
    "phone": "(+49)17687972312",
    "region": "Europe",
    "time": "Saturday, 8th August at 6.30 PM",
-   "venue": "TBA soon",
+   "venue": "Aachen, Germany",
    "registration": "",
-   "notes": "",
-   "lat": 1.33621,
-   "lng": 103.76456,
+   "notes": "Exact details to be announced soon",
+   "lat": 50.77635,
+   "lng": 6.08386,
    "precise": true
   },
   {
@@ -373,7 +373,7 @@
    "time": "Saturday, 8th August from 12.00 PM to 4.30 PM",
    "venue": "MG Hall, YMCA Indian Student Hostel, 6EY, YMCA Indian Student Hostel, 41 Fitzroy Square, London W1T 6AQ, United Kingdom",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-london-uk/",
-   "notes": "",
+   "notes": "Regular registration £35pp until 30th July, prices £40pp after that",
    "lat": 51.52299,
    "lng": -0.1395,
    "precise": true
@@ -645,6 +645,20 @@
    "precise": true
   },
   {
+   "city": "Bellary, Karnataka",
+   "volunteer": "Jayakrishna Tumu",
+   "email": "jayakrishnabits@gmail.com",
+   "phone": "(+91) 9351271895",
+   "region": "India",
+   "time": "Sunday, August 9th",
+   "venue": "",
+   "registration": "",
+   "notes": "",
+   "lat": 15.14302,
+   "lng": 76.91733,
+   "precise": false
+  },
+  {
    "city": "Bhilwara",
    "volunteer": "Sanjeev Lodha, Shantilal Shrimal",
    "email": "",
@@ -786,9 +800,9 @@
   },
   {
    "city": "Goa",
-   "volunteer": "Veeky Baths , Nitin Sharma",
-   "email": "veeky@goa.bits-pilani.ac.in, alumnirelations@goa.bits-pilani.ac.in",
-   "phone": "9823764987, 7983081204",
+   "volunteer": "Alumni Relations Division, BITS Goa",
+   "email": "alumnirelations@goa.bits-pilani.ac.in",
+   "phone": "",
    "region": "India",
    "time": "7th August, 2026, Friday, 4:30 PM onwards",
    "venue": "B Dome, C- Wing, Pilani, Chicalim, Sancoale, Goa 403726",
@@ -819,12 +833,12 @@
    "phone": "(+91) 9666828389",
    "region": "India",
    "time": "Saturday, August 8th at 8AM",
-   "venue": "TBC soon",
-   "registration": "forms.gle/5iBV65FHnDxHDBxt8",
-   "notes": "Breakfast starts at 8 AM and plan is to wrap up by 10AM",
-   "lat": null,
-   "lng": null,
-   "precise": false
+   "venue": "Hyderabad, India",
+   "registration": "https://forms.gle/5iBV65FHnDxHDBxt8",
+   "notes": "Breakfast starts at 8 AM and plan is to wrap up by 10AM. Venue to be announced soon",
+   "lat": 17.36059,
+   "lng": 78.47406,
+   "precise": true
   },
   {
    "city": "Hyderabad - BITS & Bytes Sunday Brunch",
@@ -847,12 +861,12 @@
    "phone": "(+91) 9666828389",
    "region": "India",
    "time": "Saturday, August 8th at 6AM",
-   "venue": "TBC soon",
-   "registration": "forms.gle/5iBV65FHnDxHDBxt8",
-   "notes": "1) Gather By 6.15 AM at TBD\r\n2) Walk in the park (buy entry ticket at the counter)\r\n3) Gather at 7:30 at the Main gate again for a group Photo",
-   "lat": null,
-   "lng": null,
-   "precise": false
+   "venue": "Hyderabad, India",
+   "registration": "https://forms.gle/5iBV65FHnDxHDBxt8",
+   "notes": "1) Gather By 6.15 AM at TBD - Venue to be announced soon\n2) Walk in the park (buy entry ticket at the counter)\n3) Gather at 7:30 at the Main gate again for a group Photo",
+   "lat": 17.36059,
+   "lng": 78.47406,
+   "precise": true
   },
   {
    "city": "Indore",
@@ -903,12 +917,12 @@
    "phone": "(+91) 8619671858",
    "region": "India",
    "time": "",
-   "venue": "",
+   "venue": "Kota, Rajasthan, India",
    "registration": "",
-   "notes": "",
-   "lat": 5.42144,
-   "lng": 100.34149,
-   "precise": false
+   "notes": "Venue to be confirmed soon",
+   "lat": 25.1737,
+   "lng": 75.85742,
+   "precise": true
   },
   {
    "city": "Lucknow",
@@ -1010,9 +1024,9 @@
   },
   {
    "city": "Pondicherry",
-   "volunteer": "Varadarajan",
-   "email": "varadarajan.s@gmail.com",
-   "phone": "9629316679",
+   "volunteer": "Arun",
+   "email": "",
+   "phone": "(+91) 9022173108",
    "region": "India",
    "time": "",
    "venue": "",
@@ -1024,17 +1038,17 @@
   },
   {
    "city": "Pune",
-   "volunteer": "Jiten Divgi, Kunjan Gandhi",
-   "email": "jbdivgi@divgi-tts.com, ksgindia@gmail.com",
-   "phone": "8380076515, 9004040626",
+   "volunteer": "Jiten Divgi, Kunjan Gandhi, Atul Mishra",
+   "email": "pune-chapter@bitsaa.org, atul.mishra@bitsaa.org",
+   "phone": "(+91) 8380076515, (+91) 9004040626, (+91) 9322266483",
    "region": "India",
-   "time": "",
-   "venue": "",
-   "registration": "",
-   "notes": "",
-   "lat": 18.52137,
-   "lng": 73.85451,
-   "precise": false
+   "time": "Saturday, August 8th from 7PM onwards",
+   "venue": "Pivo Garten, Sr. no. 93/11, Upper Koregaon Park, Mundhwa, Pune, Maharashtra 411036",
+   "registration": "https://www.bitsaa.org/e/bitsians-day-2026-pune",
+   "notes": "UPI ID: 9823162807@timecosmos. Rs. 1000 for Alumni and Rs. 500 for students",
+   "lat": 18.53432,
+   "lng": 73.92983,
+   "precise": true
   },
   {
    "city": "Surat, India",
@@ -1180,7 +1194,7 @@
    "city": "Muscat, Oman",
    "volunteer": "Sirisha Tanguturi",
    "email": "sirishaprasad@gmail.com",
-   "phone": "(+968) 97880267",
+   "phone": "(+91) 8105761767",
    "region": "Middle East",
    "time": "",
    "venue": "",
@@ -1290,14 +1304,14 @@
   },
   {
    "city": "Santiago Chile",
-   "volunteer": "Shabarinath Kande",
-   "email": "shabarikande@gmail.com",
-   "phone": "",
+   "volunteer": "Ayush Gupta",
+   "email": "guptaayush40@gmail.com",
+   "phone": "(+91)7721880212",
    "region": "RoW",
-   "time": "",
+   "time": "Virtual LATAM meet up",
    "venue": "",
    "registration": "",
-   "notes": "",
+   "notes": "Virtual LATAM meet up, Contact Aayush if you are in Latin America",
    "lat": -33.4377,
    "lng": -70.65107,
    "precise": false
@@ -1348,7 +1362,7 @@
    "city": "Boston, MA",
    "volunteer": "Meet Parikh, Murali",
    "email": "meetparikh99@gmail.com, muralikrishnasai36@gmail.com",
-   "phone": "+1 332-260-9128, +1 949-664-0138",
+   "phone": "+1 332-260-9128, +91 9553875366",
    "region": "US/Canada",
    "time": "Saturday, 8th August from 4 PM to 7PM",
    "venue": "Samuel Adams Boston Brewery - Jamaica Plain, 30 Germania St, Boston, MA 02130, United States",
@@ -1569,20 +1583,6 @@
    "precise": true
   },
   {
-   "city": "Oak Ridge, TN",
-   "volunteer": "Narasimha S Himakuntala",
-   "email": "simhabits10@hotmail.com",
-   "phone": "+1 912-272-6226",
-   "region": "US/Canada",
-   "time": "",
-   "venue": "",
-   "registration": "",
-   "notes": "",
-   "lat": 36.01036,
-   "lng": -84.26964,
-   "precise": false
-  },
-  {
    "city": "Ottawa, Canada",
    "volunteer": "Priti Nigam Srivastava",
    "email": "vivekpriti@gmail.com",
@@ -1598,7 +1598,7 @@
   },
   {
    "city": "Overland Park, KS",
-   "volunteer": "Shivaprasad Bangalore Veerappa\n2003",
+   "volunteer": "Shivaprasad Bangalore Veerappa",
    "email": "shivbv@gmail.com",
    "phone": "+1 267-632-6861",
    "region": "US/Canada",
@@ -1711,16 +1711,16 @@
   {
    "city": "Seattle, WA",
    "volunteer": "Rajiv Balachandran, Sumit Binnani",
-   "email": "rajivbalachandran@gmail.com",
-   "phone": "+1 206-650-2771",
+   "email": "rajivbalachandran@gmail.com, sumit.binnani@gmail.com",
+   "phone": "+1 206-650-2771, +1 657-200-1557",
    "region": "US/Canada",
-   "time": "Friday, August 7th",
-   "venue": "",
-   "registration": "",
-   "notes": "",
-   "lat": 47.60383,
-   "lng": -122.33006,
-   "precise": false
+   "time": "Friday, August 7th from 5pm",
+   "venue": "Bellevue Downtown Park, 10201 NE 4th St, Bellevue, WA 98004, United States",
+   "registration": "https://tikkl.com/bitsaaseattle/c/2026-bitsian-day",
+   "notes": "$10 per person to cover snacks",
+   "lat": 47.61194,
+   "lng": -122.20439,
+   "precise": true
   },
   {
    "city": "Sunnyvale, CA",
@@ -1809,6 +1809,12 @@
  ],
  "companyMeets": [
   {
+   "company": "Corpay (Fleetcor)",
+   "city": "Atlanta",
+   "volunteer": "Shreya Chandra",
+   "email": "shreya.chandra.24@gmail.com"
+  },
+  {
    "company": "Accenture Strategy",
    "city": "Bangalore",
    "volunteer": "Ipshita Bandyopadhyay",
@@ -1827,6 +1833,18 @@
    "email": "Usharma.98@gmail.com"
   },
   {
+   "company": "Bosch limited",
+   "city": "Bangalore",
+   "volunteer": "Mr Jyoti Dindurle",
+   "email": "Jyotimdindurle@gmail.com"
+  },
+  {
+   "company": "Callhub",
+   "city": "Bangalore",
+   "volunteer": "Pranav Kocheta",
+   "email": "Pranavkocheta07@gmail.com"
+  },
+  {
    "company": "Daimler Truck",
    "city": "Bangalore",
    "volunteer": "Nandhini",
@@ -1839,6 +1857,18 @@
    "email": "rishabh.jain@groww.in"
   },
   {
+   "company": "Impact Analytics",
+   "city": "Bangalore",
+   "volunteer": "Kartikeya Mayank",
+   "email": "kartikeymv@gmail.com"
+  },
+  {
+   "company": "Licious",
+   "city": "Bangalore",
+   "volunteer": "Sarthak Mendiratta",
+   "email": "sarthakmendiratta@licious.com"
+  },
+  {
    "company": "PayPal",
    "city": "Bangalore",
    "volunteer": "Manas Luthra",
@@ -1849,6 +1879,12 @@
    "city": "Bangalore",
    "volunteer": "Yashaswi Bharadwaj",
    "email": "yashaswibharadwaj@gmail.com"
+  },
+  {
+   "company": "UIDAI",
+   "city": "Bangalore",
+   "volunteer": "Rohith Pavithran",
+   "email": "rohithtp@gmail.com"
   },
   {
    "company": "Walmart Global Tech",
@@ -1869,38 +1905,26 @@
    "email": "shubhra.garg2023@gmail.com"
   },
   {
-   "company": "Bosch limited",
-   "city": "Bangalore",
-   "volunteer": "Mr Jyoti Dindurle",
-   "email": "Jyotimdindurle@gmail.com"
+   "company": "HSBC",
+   "city": "Bengaluru",
+   "volunteer": "Shaurya Verma",
+   "email": "shauryav24@gmail.com"
   },
   {
-   "company": "Callhub",
-   "city": "Bangalore",
-   "volunteer": "Pranav Kocheta",
-   "email": "Pranavkocheta07@gmail.com"
+   "company": "Delivery Hero",
+   "city": "Berlin",
+   "volunteer": "Azhagappan S",
+   "email": "s.azhagappan@gmail.com"
   },
   {
-   "company": "Impact Analytics",
-   "city": "Bangalore",
-   "volunteer": "Kartikeya Mayank",
-   "email": "kartikeymv@gmail.com"
-  },
-  {
-   "company": "Licious",
-   "city": "Bangalore",
-   "volunteer": "Sarthak Mendiratta",
-   "email": "sarthakmendiratta@licious.com"
-  },
-  {
-   "company": "UIDAI",
-   "city": "Bangalore",
-   "volunteer": "Rohith Pavithran",
-   "email": "rohithtp@gmail.com"
+   "company": "Mathworks",
+   "city": "Boston",
+   "volunteer": "Ramnarayan Krishnamurthy",
+   "email": "shreyas.ramnarayan@gmail.com"
   },
   {
    "company": "ATRIBS GLOBAL TECHNOLOGY",
-   "city": "CHENNAI",
+   "city": "Chennai",
    "volunteer": "Murugavel B",
    "email": "murugavel.b@atribs.in"
   },
@@ -1923,6 +1947,12 @@
    "email": "reach.Aditya.here@gmail.com"
   },
   {
+   "company": "Haber Inc.",
+   "city": "Chicago",
+   "volunteer": "Abhik Soanpet",
+   "email": "abhiksoanpet@gmail.com"
+  },
+  {
    "company": "Coforge (American Airlines)",
    "city": "Dallas",
    "volunteer": "Raviteja Kondubhatla",
@@ -1935,22 +1965,34 @@
    "email": "sanika572921@gmail.com"
   },
   {
+   "company": "Verition Fund Management",
+   "city": "Dubai",
+   "volunteer": "Praveen Visesh",
+   "email": "praveen.visesh@gmail.com"
+  },
+  {
    "company": "Wipro",
    "city": "Gaya",
    "volunteer": "Sudhanshu Raj",
    "email": "rsudhanshu32@gmail.com"
   },
   {
+   "company": "Applied Materials",
+   "city": "Gloucester, USA",
+   "volunteer": "Vignesh Sathyaseelan",
+   "email": "vigneshsathyaseelan29@gmail.com"
+  },
+  {
    "company": "AWS",
-   "city": "Gurgaon",
+   "city": "Delhi NCR - Gurgaon",
    "volunteer": "Madhavpreet Saini",
    "email": "madhavpreet.singh@gmail.com"
   },
   {
-   "company": "Deloitte",
-   "city": "Hyderabad",
-   "volunteer": "Lade Lakshmi Pradyun Chakravarthy",
-   "email": "f20210565h@alumni.bits-pilani.ac.in"
+   "company": "Blackrock",
+   "city": "Delhi NCR - Gurgaon",
+   "volunteer": "Naman Ajay Markhedkar",
+   "email": "marknaman05@gmail.com"
   },
   {
    "company": "Apple",
@@ -1965,6 +2007,12 @@
    "email": "satishgarla@gmail.com"
   },
   {
+   "company": "Deloitte",
+   "city": "Hyderabad",
+   "volunteer": "Lade Lakshmi Pradyun Chakravarthy, Ramakrishna Varanasi",
+   "email": "f20210565h@alumni.bits-pilani.ac.in, varramakrishna95@gmail.com"
+  },
+  {
    "company": "Ernst & Young",
    "city": "Hyderabad",
    "volunteer": "Raghav Singh",
@@ -1973,20 +2021,8 @@
   {
    "company": "ICICI Bank",
    "city": "Hyderabad",
-   "volunteer": "Ram Ashiya",
-   "email": "ramashiya01@gmail.com"
-  },
-  {
-   "company": "ICICI Bank",
-   "city": "Hyderabad",
-   "volunteer": "V ABHISHEK",
-   "email": "f20180057h@alumni.bits-pilani.ac.in"
-  },
-  {
-   "company": "ISB - Indian School of Business",
-   "city": "Hyderabad",
-   "volunteer": "Ramkumar Venkat",
-   "email": "ramkumarv1806@gmail.com"
+   "volunteer": "Ram Ashiya, V ABHISHEK",
+   "email": "ramashiya01@gmail.com, f20180057h@alumni.bits-pilani.ac.in"
   },
   {
    "company": "ISB - Indian School of Business",
@@ -2001,12 +2037,6 @@
    "email": "aryan.gupta.agency@gmail.com"
   },
   {
-   "company": "Deloitte Consulting",
-   "city": "Hyderabad",
-   "volunteer": "Ramakrishna Varanasi",
-   "email": "varramakrishna95@gmail.com"
-  },
-  {
    "company": "JP Morgan & Chase",
    "city": "Hyderabad",
    "volunteer": "Sai Sashank Narayanam",
@@ -2019,10 +2049,112 @@
    "email": "abhinavchoudhary062001@gmail.com"
   },
   {
+   "company": "Microsoft",
+   "city": "Mountain view, California",
+   "volunteer": "Naman Gupta",
+   "email": "gupta.naman.103@gmail.com"
+  },
+  {
+   "company": "Cognizant",
+   "city": "London, UK",
+   "volunteer": "Aditya Ganji",
+   "email": "adityavardhan.ganji@gmail.com"
+  },
+  {
+   "company": "Microsoft",
+   "city": "London, UK",
+   "volunteer": "Rahul Agarwal",
+   "email": "rahulbvm@gmail.com"
+  },
+  {
+   "company": "Siemens",
+   "city": "London, UK",
+   "volunteer": "Sai Darshan Adloor",
+   "email": "sai.adloor@gmail.com"
+  },
+  {
+   "company": "Aditya Birla Group (Leadership Associate)",
+   "city": "Mumbai",
+   "volunteer": "Gaurav Sarawgi",
+   "email": "sarawgigaurav05@gmail.com"
+  },
+  {
+   "company": "Citibank",
+   "city": "Mumbai",
+   "volunteer": "Ajit Pratap Singh",
+   "email": "ajitindraveer@hotmail.co.uk"
+  },
+  {
+   "company": "Crystal Tech",
+   "city": "Mumbai",
+   "volunteer": "Sanyam",
+   "email": "sanyam.jain@bitsaa.org"
+  },
+  {
+   "company": "MSCI",
+   "city": "Mumbai",
+   "volunteer": "Manan Sood",
+   "email": "manan.sood03@gmail.com"
+  },
+  {
+   "company": "Novel Jewels Limited (Aditya Birla Group)",
+   "city": "Mumbai",
+   "volunteer": "Sathwik Krishna Repala",
+   "email": "SathwikKrishna.Repala2026@bitsom.edu.in"
+  },
+  {
+   "company": "Deutsche Bank",
+   "city": "Mumbai",
+   "volunteer": "Vishnu Preetham Pujala",
+   "email": "pvishnupreetham@gmail.com"
+  },
+  {
+   "company": "Scalable Capital",
+   "city": "Munich",
+   "volunteer": "Hrishikesh A J",
+   "email": "hrishikesh2410@gmail.com"
+  },
+  {
+   "company": "Siemens",
+   "city": "Munich",
+   "volunteer": "Karthik Ananthakrishnan",
+   "email": "karthik.fcb9@gmail.com"
+  },
+  {
+   "company": "TeamViewer",
+   "city": "Munich",
+   "volunteer": "Aarohi Khodkumbhe",
+   "email": "aarohik221@gmail.com"
+  },
+  {
+   "company": "CVS Health",
+   "city": "New York",
+   "volunteer": "Abhishikth Peri",
+   "email": "abhishikth.peri@gmail.com"
+  },
+  {
+   "company": "Santander",
+   "city": "New York",
+   "volunteer": "Sree Ram Potini",
+   "email": "sreeram.potini@gmail.com"
+  },
+  {
+   "company": "Bloomberg lp",
+   "city": "New York",
+   "volunteer": "Laxman Pottimuthi",
+   "email": "plakshman93@gmail.com"
+  },
+  {
    "company": "Cadence Design Systems",
-   "city": "Noida",
+   "city": "Delhi NCR-Noida",
    "volunteer": "Yash",
    "email": "Yash.vbits@gmail.com"
+  },
+  {
+   "company": "L'Oréal",
+   "city": "Paris, France",
+   "volunteer": "Aishwarya Karunakar",
+   "email": "aishwaryakarunakar@gmail.com"
   },
   {
    "company": "Bosch Chassis Systems India Pvt Ltd",
@@ -2049,16 +2181,46 @@
    "email": "koustubhdeshmukh@gmail.com"
   },
   {
+   "company": "Turing.com",
+   "city": "San Francisco, California, USA",
+   "volunteer": "Ritwik chakradhar",
+   "email": "ritwik.c@turing.com"
+  },
+  {
+   "company": "Analog Devices",
+   "city": "Santa Clara, California, USA",
+   "volunteer": "Vasu Gupta",
+   "email": "vasugupta711@gmail.com"
+  },
+  {
+   "company": "NVIDIA",
+   "city": "Santa Clara, California, USA",
+   "volunteer": "Nishtha Agrawal",
+   "email": "nishthaagrawal16@gmail.com"
+  },
+  {
    "company": "Palo Alto Networks",
    "city": "Santa Clara, California, USA",
    "volunteer": "Murali Paluru",
    "email": "muralisrsai@gmail.com"
   },
   {
-   "company": "Microsoft",
-   "city": "Mountain view, California",
-   "volunteer": "Naman Gupta",
-   "email": "gupta.naman.103@gmail.com"
+   "company": "Amazon",
+   "city": "Seattle",
+   "volunteer": "Aparna Perwala, Eashan Sapre",
+   "email": "aparna.perwala@gmail.com, eashan15sapre@gmail.com"
+  },
+  {
+   "company": "TikTok",
+   "city": "Seattle",
+   "volunteer": "Shivani Taskar",
+   "email": "shivanitaskar@gmail.com"
+  },
+  {
+   "company": "GIC",
+   "city": "Singapore",
+   "volunteer": "Karan Singh Mann",
+   "email": "karansmann@gmail.com"
   }
  ],
  "instituteMeets": [
@@ -2137,7 +2299,7 @@
    "link": "https://www.bitsaa.org/page/sahaaya"
   },
   {
-   "name": "Join BITSAA",
+   "name": "Register on BITSAA",
    "image": "assets/img/12FB3RfP6W5GgnBTM-EZy26agQfZ4VRWh.jpg",
    "team": "",
    "community": "",
@@ -2157,8 +2319,20 @@
    "pocEmail": "kushal.rathi@bitsaa.org",
    "description": "🎉 Hey BITSIANS — Want to Build Cool Stuff with Other BITSIANS?\n\nEver missed the energy of late-night discussions, chaotic group projects, and doing something meaningful together?\n\nBITSAA International is looking for enthusiastic volunteers to join teams where you:\n+ Work with smart, driven alumni across the world\n+ Build real initiatives (not just attend meetings)\n+ Learn, experiment, and have fun along the way\nNo rigid hierarchy. No heavy time pressure. Just good people doing interesting things.\n\n\nTeams You Can Join: People Strategy, Fundraising, Finance Team, Team Sahaaya, Alumni Mentorship Program (AMP), Chapter Relations Team, Marketing & Communications, Scholarships & Awards\nMore details here: https://lnkd.in/g6Uhkdcr\n\n✨ What’s in it for you?\n+ Make friends across batches & geographies to learn and grow along\n+ Pick up leadership, strategy, and execution skills\n+ Be part of initiatives that actually ship\nAnd yes - contribute to the BITS ecosystem while having a great time doing it\n\nWhether you’re:\n+ Early in your career and excited to learn & experiment\n+ Mid-career and keen to build, lead, and collaborate\n+ A senior BITSIAN who enjoys mentoring and shaping direction\nThere’s a place for you here 🫶\n\nCome for the people. Stay for the experience.\nLet’s build something memorable. 🚀",
    "resources": "",
-   "moreInfo": "https://lnkd.in/g6Uhkdcr",
+   "moreInfo": "https://docs.google.com/document/d/1fy0CynW4zHIO-TwKIGo_KBH7hdGSEOWi2yavfQirCkQ/edit?tab=t.0",
    "link": "https://bit.ly/bitsiansday_bitsaa"
+  },
+  {
+   "name": "BITSAA Global Academic Mentorship",
+   "image": "assets/img/1kkywjxXu9A0moEpB7nAlCrT7PCYT3HHP.jpg",
+   "team": "BITSAA Alumni Mentorship Program",
+   "community": "",
+   "poc": "AMP Team",
+   "pocEmail": "amp@bitsaa.org",
+   "description": "Planning to pursue an MS? Or have experience that could help another BITSian navigate the journey?\n\nRegistrations are now open for the BITSAA Global Academic Mentorship Programme, bringing together BITSians seeking guidance and alumni willing to share their knowledge, experience and perspective.\n\nWhether you are looking for guidance or ready to support a fellow BITSian, choose your role in the journey.\n\nRegister as a mentee: https://deeply-gate-2ad.notion.site/9b42294b0224832cade981f3905adc67 \nJoin as a mentor: https://deeply-gate-2ad.notion.site/80d2294b02248367919501785c6640af\n\nForms close on 7 August.",
+   "resources": "https://deeply-gate-2ad.notion.site/9b42294b0224832cade981f3905adc67",
+   "moreInfo": "https://deeply-gate-2ad.notion.site/80d2294b02248367919501785c6640af",
+   "link": ""
   }
  ],
  "merchandise": [
