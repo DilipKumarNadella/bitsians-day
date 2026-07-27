@@ -8,7 +8,11 @@ SOURCE = "gsheet"
 SPREADSHEET_ID = "1mVc8dcQDf8QUDXsSx9JE91v7r17CQE5YqPzlOJG_WqM"
 EXCEL_SRC = r"c:\Users\dilip\Downloads\BITSians' Day app sheet 2025.xlsx"
 
-OUT_DIR = r"d:\xampp\htdocs\Bitsian_day\data"
+# Resolve all output paths relative to this script so the build runs identically
+# on a local Windows machine and on a Linux CI runner (GitHub Actions).
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+OUT_DIR = os.path.join(BASE_DIR, "data")
 os.makedirs(OUT_DIR, exist_ok=True)
 CACHE_PATH = os.path.join(OUT_DIR, "_geocache.json")
 
@@ -108,7 +112,7 @@ def drive_direct(url):
 
 # Google Drive throttles many simultaneous image requests, so download each
 # image ONCE at build time and serve it from our own /assets/img folder.
-IMG_DIR = r"d:\xampp\htdocs\Bitsian_day\assets\img"
+IMG_DIR = os.path.join(BASE_DIR, "assets", "img")
 os.makedirs(IMG_DIR, exist_ok=True)
 
 
@@ -448,7 +452,7 @@ with open(os.path.join(OUT_DIR, "site-data.json"), "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=1)
 
 # also emit a JS file for file:// robustness
-with open(r"d:\xampp\htdocs\Bitsian_day\assets\data.js", "w", encoding="utf-8") as f:
+with open(os.path.join(BASE_DIR, "assets", "data.js"), "w", encoding="utf-8") as f:
     f.write("window.SITE_DATA = ")
     json.dump(data, f, ensure_ascii=False)
     f.write(";\n")
@@ -456,7 +460,7 @@ with open(r"d:\xampp\htdocs\Bitsian_day\assets\data.js", "w", encoding="utf-8") 
 # ---------- Cache-bust data.js in index.html ----------
 # Stamp a fresh ?v=<timestamp> onto the data.js <script> tag so browsers and
 # CDNs always fetch the newly written data instead of a cached copy.
-INDEX_PATH = r"d:\xampp\htdocs\Bitsian_day\index.html"
+INDEX_PATH = os.path.join(BASE_DIR, "index.html")
 try:
     with open(INDEX_PATH, encoding="utf-8") as f:
         _html = f.read()

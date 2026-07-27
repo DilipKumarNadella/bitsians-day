@@ -334,12 +334,23 @@
     .split(/\n{2,}/).filter((p) => p.trim())
     .map((p) => `<p>${mdInline(p.replace(/^[*+]\s?/gm, "• ").replace(/\n/g, "<br>"))}</p>`).join("");
 
+  // A meaningful call-to-action label for an initiative's primary link
+  function linkLabel(f) {
+    const n = String(f.name || "").toLowerCase();
+    const u = String(f.link || "").toLowerCase();
+    if (/company ambassador|\bcan\b/.test(n)) return "Join CAN";
+    if (/volunteer/.test(n)) return "Volunteer";
+    if (/^join\b/.test(n)) return "Register";
+    if (/forms\.gle|docs\.google\.com\/forms/.test(u)) return "Register";
+    return "Learn more";
+  }
+
   function renderFeatured() {
     $("#featuredGrid").innerHTML = featured.map((f, i) => {
       const email = f.pocEmail ? `<a href="mailto:${esc(f.pocEmail)}">${esc(f.pocEmail)}</a>` : "";
       const poc = (f.poc || email)
         ? `<p class="feature-poc">👤 ${esc(f.poc)}${f.poc && email ? " · " : ""}${email}</p>` : "";
-      const link = isUrl(f.link) ? `<a class="mini-link" href="${esc(f.link)}" target="_blank" rel="noopener">Link</a>` : "";
+      const link = isUrl(f.link) ? `<a class="mini-link" href="${esc(f.link)}" target="_blank" rel="noopener">${esc(linkLabel(f))}</a>` : "";
       return `<article class="feature-card is-clickable" data-open-featured="${i}">
         ${mediaHtml(f.image, f.name)}
         <div class="feature-body">
@@ -488,7 +499,7 @@
     const email = f.pocEmail ? `<a href="mailto:${esc(f.pocEmail)}">${esc(f.pocEmail)}</a>` : "";
     const links = [];
     urlsIn(f.resources).forEach((u, i) => links.push(`<a class="mini-link" href="${esc(u)}" target="_blank" rel="noopener">${resLabel(u, i)}</a>`));
-    if (isUrl(f.link)) links.push(`<a class="mini-link" href="${esc(f.link)}" target="_blank" rel="noopener">Link</a>`);
+    if (isUrl(f.link)) links.push(`<a class="mini-link" href="${esc(f.link)}" target="_blank" rel="noopener">${esc(linkLabel(f))}</a>`);
     if (isUrl(f.moreInfo)) links.push(`<a class="mini-link" href="${esc(f.moreInfo)}" target="_blank" rel="noopener">More info</a>`);
     if (isUrl(f.community)) links.push(`<a class="mini-link" href="${esc(f.community)}" target="_blank" rel="noopener">Community</a>`);
     openModal(`

@@ -984,7 +984,7 @@
    "city": "Nashik",
    "volunteer": "Sarvesh Sukhatme",
    "email": "sarveshsukhatme@gmail.com, f2009210p@alumni.bits-pilani.ac.in",
-   "phone": "9665147729",
+   "phone": "(+91) 96651 47729",
    "region": "India",
    "time": "",
    "venue": "",
@@ -1042,7 +1042,7 @@
    "email": "hsavani100@gmail.com",
    "phone": "(+91)9909603320",
    "region": "India",
-   "time": "",
+   "time": "Saturday, August 8th, from 7 PM onward",
    "venue": "Tea Post, Shop No 14/15, Ground Floor, Zircon Plus, Dabholi Rd, opp. Avalon Commercial Hub, Sahyog Society, Katargam, Surat, Gujarat 395004",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-surat/",
    "notes": "",
@@ -1322,13 +1322,13 @@
    "email": "vedantsapra@gmail.com",
    "phone": "+1 469-774-5325",
    "region": "US/Canada",
-   "time": "Friday, 7th August Time TBA",
-   "venue": "TBC soon",
+   "time": "Friday, 7th August 7pm to 10pm",
+   "venue": "The Austin Beer Garden Brewing Co., 1305 W Oltorf St, Austin, TX 78704, United States",
    "registration": "",
    "notes": "",
-   "lat": 30.27113,
-   "lng": -97.7437,
-   "precise": false
+   "lat": 30.2452,
+   "lng": -97.7689,
+   "precise": true
   },
   {
    "city": "Bentonville, AR",
@@ -1653,20 +1653,6 @@
    "precise": false
   },
   {
-   "city": "Purdue, IN",
-   "volunteer": "Vignesh Sathyaseelan",
-   "email": "vsathyas@purdue.edu",
-   "phone": "+1 765-746-9445",
-   "region": "US/Canada",
-   "time": "",
-   "venue": "",
-   "registration": "",
-   "notes": "",
-   "lat": 40.43003,
-   "lng": -86.92642,
-   "precise": false
-  },
-  {
    "city": "Raleigh-Durham, NC",
    "volunteer": "Gopal Sadige",
    "email": "gopal.sadige@gmail.com",
@@ -1962,7 +1948,7 @@
   },
   {
    "company": "Deloitte",
-   "city": "Hyd",
+   "city": "Hyderabad",
    "volunteer": "Lade Lakshmi Pradyun Chakravarthy",
    "email": "f20210565h@alumni.bits-pilani.ac.in"
   },
@@ -2123,12 +2109,6 @@
    "location": "Trondheim, Norway",
    "volunteer": "Nikhil Khedekar",
    "email": "nikhilvkhedekar@gmail.com"
-  },
-  {
-   "institute": "University of Chicago",
-   "location": "Chicago",
-   "volunteer": "Anierudh Vishwanathan",
-   "email": "anierudh223@gmail.com"
   }
  ],
  "featured": [
@@ -2243,7 +2223,7 @@
      "role": "Chapter Coordinator",
      "email": "shruti.rastogi@bitsaa.org",
      "linkedin": "",
-     "photo": "assets/img/1WQbcfDFVOFqzQyaqdghBDBiSJVGYTZ9e.jpg"
+     "photo": "assets/img/1Mz4VpJrdIOWdGuLMJwe7HKU42d1O6gYQ.jpg"
     },
     {
      "name": "Shubham Agrawal",
@@ -2279,11 +2259,11 @@
      "photo": "assets/img/1mFZ_PPyQiM7aYEovczTnzGCDSvj-2jPy.jpg"
     },
     {
-     "name": "Swetha K",
+     "name": "Swetha Kanuboddi",
      "role": "Chapter Coordinator",
-     "email": "",
+     "email": "swetha.k@bitsaa.org",
      "linkedin": "",
-     "photo": ""
+     "photo": "assets/img/1xWal4SZImxvwJBXY3szL9YGh5yDKsgTN.jpg"
     },
     {
      "name": "Khushi Agrawal",
@@ -2373,9 +2353,9 @@
     {
      "name": "Manish Mallavarapu",
      "role": "Chapter Coordinator",
-     "email": "",
+     "email": "manish.m@bitsaa.org",
      "linkedin": "",
-     "photo": ""
+     "photo": "assets/img/1nCFZFVTxZ977axHwpPhsjbX427-6d1O5.jpg"
     }
    ]
   },
@@ -2539,6 +2519,18 @@
      "email": "kushal.rathi@bitsaa.org",
      "linkedin": "",
      "photo": "assets/img/1pa9nZbLeZNdeAot4DAIz1FHV-4s4rToN.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Merchandise team",
+   "members": [
+    {
+     "name": "Rishabh Jain",
+     "role": "Volunteer",
+     "email": "rishabh.jain@bitsaa.org",
+     "linkedin": "",
+     "photo": "assets/img/14IGc1EwCzbjn4xoShKEc9-XUUyURLT1t.jpg"
     }
    ]
   }

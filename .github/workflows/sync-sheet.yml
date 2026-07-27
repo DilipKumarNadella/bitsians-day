@@ -1,0 +1,51 @@
+name: Sync sheet data
+
+# Rebuilds assets/data.js from the Google Sheet on a schedule and pushes the
+# result. Pushing to main automatically triggers a Vercel production deploy,
+# so the live site updates without any manual steps.
+
+on:
+  # Run automatically every 2 hours (times are UTC)
+  schedule:
+    - cron: "0 */2 * * *"
+  # Allow running it on demand from the Actions tab (Run workflow button)
+  workflow_dispatch:
+
+# Let the job commit and push back to the repository
+permissions:
+  contents: write
+
+# Never run two syncs at the same time
+concurrency:
+  group: sync-sheet
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build data from Google Sheet
+        run: python _build_data.py
+
+      - name: Commit & push if data changed
+        run: |
+          if git diff --quiet -- assets/data.js; then
+            echo "No data changes — nothing to publish."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/data.js data/site-data.json index.html data/_geocache.json assets/img
+            git commit -m "chore: auto-sync sheet data"
+            git push
+          fi
