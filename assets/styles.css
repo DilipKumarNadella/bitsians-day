@@ -305,6 +305,7 @@ body {
 .m-poc { font-size: 14px; color: var(--muted); margin-bottom: 14px; }
 .m-poc a { color: var(--red); word-break: break-word; }
 .m-desc { color: var(--charcoal); font-size: 14.5px; line-height: 1.65; }
+.m-desc a { color: var(--red); font-weight: 500; word-break: break-word; }
 .m-desc p { margin: 0 0 12px; }
 .m-desc p:last-child { margin-bottom: 0; }
 .pill { font-size: 12px; font-weight: 400; color: var(--muted); background: var(--bg); border: 1px solid var(--border); border-radius: 999px; padding: 5px 11px; }

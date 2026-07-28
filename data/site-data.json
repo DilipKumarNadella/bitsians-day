@@ -189,11 +189,11 @@
    "phone": "(+49)17687972312",
    "region": "Europe",
    "time": "Saturday, 8th August at 6.30 PM",
-   "venue": "Aachen, Germany",
+   "venue": "Fuji No Hana, Goethestraße 25A, 52064 Aachen, Germany",
    "registration": "",
    "notes": "Exact details to be announced soon",
-   "lat": 50.77635,
-   "lng": 6.08386,
+   "lat": 50.76284,
+   "lng": 6.07875,
    "precise": true
   },
   {
@@ -398,13 +398,13 @@
    "email": "f2015539p@alumni.bits-pilani.ac.in",
    "phone": "(+49) 1789059594",
    "region": "Europe",
-   "time": "",
-   "venue": "",
+   "time": "Saturday, 8th August from 12PM to 4PM",
+   "venue": "Augustiner-Keller, Arnulfstraße 52, 80335 München-Maxvorstadt, Germany",
    "registration": "",
    "notes": "",
-   "lat": 48.13711,
-   "lng": 11.57538,
-   "precise": false
+   "lat": 48.14351,
+   "lng": 11.55196,
+   "precise": true
   },
   {
    "city": "Nice, France",
@@ -944,13 +944,13 @@
    "email": "balanvee@hotmail.com",
    "phone": "(+91) 9840087614",
    "region": "India",
-   "time": "",
-   "venue": "",
-   "registration": "",
+   "time": "Friday, 7th August from 6PM to 9PM",
+   "venue": "Fortune Pandiyan Hotel, SH 72, Outpost, Ramaond Reserve Line, Madurai, Tamil Nadu 625002",
+   "registration": "https://www.bitsaa.org/e/bitsians-day-2026-madurai/",
    "notes": "",
-   "lat": 9.92612,
-   "lng": 78.1141,
-   "precise": false
+   "lat": 9.94031,
+   "lng": 78.13169,
+   "precise": true
   },
   {
    "city": "Meerut, India",
@@ -1102,8 +1102,8 @@
    "venue": "The Summit by Vivier, Vivier Spaces, D.No.32-6-14 D, Chandra Rajeswara Rao Raod, Mogalrajapuram, Christurajupuram, Vijayawada, Andhra Pradesh 520010",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-vijayawada-amravati/",
    "notes": "",
-   "lat": 16.50157,
-   "lng": 80.64415,
+   "lat": 16.50031,
+   "lng": 80.6458,
    "precise": true
   },
   {
@@ -1857,6 +1857,12 @@
    "email": "rishabh.jain@groww.in"
   },
   {
+   "company": "HSBC",
+   "city": "Bangalore",
+   "volunteer": "Shaurya Verma",
+   "email": "shauryav24@gmail.com"
+  },
+  {
    "company": "Impact Analytics",
    "city": "Bangalore",
    "volunteer": "Kartikeya Mayank",
@@ -1905,12 +1911,6 @@
    "email": "shubhra.garg2023@gmail.com"
   },
   {
-   "company": "HSBC",
-   "city": "Bengaluru",
-   "volunteer": "Shaurya Verma",
-   "email": "shauryav24@gmail.com"
-  },
-  {
    "company": "Delivery Hero",
    "city": "Berlin",
    "volunteer": "Azhagappan S",
@@ -1941,16 +1941,16 @@
    "email": "cswaminathan72@gmail.com, sharu.vaidyanath@gmail.com"
   },
   {
-   "company": "Qualcomm",
-   "city": "Cork Ireland",
-   "volunteer": "Aditya Manglik",
-   "email": "reach.Aditya.here@gmail.com"
-  },
-  {
    "company": "Haber Inc.",
    "city": "Chicago",
    "volunteer": "Abhik Soanpet",
    "email": "abhiksoanpet@gmail.com"
+  },
+  {
+   "company": "Qualcomm",
+   "city": "Cork Ireland",
+   "volunteer": "Aditya Manglik",
+   "email": "reach.Aditya.here@gmail.com"
   },
   {
    "company": "Coforge (American Airlines)",
@@ -1963,6 +1963,30 @@
    "city": "Delhi NCR",
    "volunteer": "Sakina Merchant",
    "email": "sanika572921@gmail.com"
+  },
+  {
+   "company": "AWS",
+   "city": "Delhi NCR - Gurgaon",
+   "volunteer": "Madhavpreet Saini",
+   "email": "madhavpreet.singh@gmail.com"
+  },
+  {
+   "company": "Blackrock",
+   "city": "Delhi NCR - Gurgaon",
+   "volunteer": "Naman Ajay Markhedkar",
+   "email": "marknaman05@gmail.com"
+  },
+  {
+   "company": "Ernst & Young",
+   "city": "Delhi NCR - Gurgaon",
+   "volunteer": "Aditya Narwania",
+   "email": "adityanarwania@gmail.com"
+  },
+  {
+   "company": "Cadence Design Systems",
+   "city": "Delhi NCR-Noida",
+   "volunteer": "Yash",
+   "email": "Yash.vbits@gmail.com"
   },
   {
    "company": "Verition Fund Management",
@@ -1981,18 +2005,6 @@
    "city": "Gloucester, USA",
    "volunteer": "Vignesh Sathyaseelan",
    "email": "vigneshsathyaseelan29@gmail.com"
-  },
-  {
-   "company": "AWS",
-   "city": "Delhi NCR - Gurgaon",
-   "volunteer": "Madhavpreet Saini",
-   "email": "madhavpreet.singh@gmail.com"
-  },
-  {
-   "company": "Blackrock",
-   "city": "Delhi NCR - Gurgaon",
-   "volunteer": "Naman Ajay Markhedkar",
-   "email": "marknaman05@gmail.com"
   },
   {
    "company": "Apple",
@@ -2049,12 +2061,6 @@
    "email": "abhinavchoudhary062001@gmail.com"
   },
   {
-   "company": "Microsoft",
-   "city": "Mountain view, California",
-   "volunteer": "Naman Gupta",
-   "email": "gupta.naman.103@gmail.com"
-  },
-  {
    "company": "Cognizant",
    "city": "London, UK",
    "volunteer": "Aditya Ganji",
@@ -2071,6 +2077,12 @@
    "city": "London, UK",
    "volunteer": "Sai Darshan Adloor",
    "email": "sai.adloor@gmail.com"
+  },
+  {
+   "company": "Microsoft",
+   "city": "Mountain view, California",
+   "volunteer": "Naman Gupta",
+   "email": "gupta.naman.103@gmail.com"
   },
   {
    "company": "Aditya Birla Group (Leadership Associate)",
@@ -2109,6 +2121,12 @@
    "email": "pvishnupreetham@gmail.com"
   },
   {
+   "company": "Apple",
+   "city": "Munich",
+   "volunteer": "Aastha Dave",
+   "email": "aasthadave98@gmail.com"
+  },
+  {
    "company": "Scalable Capital",
    "city": "Munich",
    "volunteer": "Hrishikesh A J",
@@ -2127,10 +2145,10 @@
    "email": "aarohik221@gmail.com"
   },
   {
-   "company": "CVS Health",
+   "company": "Bloomberg lp",
    "city": "New York",
-   "volunteer": "Abhishikth Peri",
-   "email": "abhishikth.peri@gmail.com"
+   "volunteer": "Laxman Pottimuthi",
+   "email": "plakshman93@gmail.com"
   },
   {
    "company": "Santander",
@@ -2139,16 +2157,10 @@
    "email": "sreeram.potini@gmail.com"
   },
   {
-   "company": "Bloomberg lp",
+   "company": "CVS Health",
    "city": "New York",
-   "volunteer": "Laxman Pottimuthi",
-   "email": "plakshman93@gmail.com"
-  },
-  {
-   "company": "Cadence Design Systems",
-   "city": "Delhi NCR-Noida",
-   "volunteer": "Yash",
-   "email": "Yash.vbits@gmail.com"
+   "volunteer": "Abhishikth Peri",
+   "email": "abhishikth.peri@gmail.com"
   },
   {
    "company": "L'Oréal",
@@ -2330,8 +2342,8 @@
    "poc": "AMP Team",
    "pocEmail": "amp@bitsaa.org",
    "description": "Planning to pursue an MS? Or have experience that could help another BITSian navigate the journey?\n\nRegistrations are now open for the BITSAA Global Academic Mentorship Programme, bringing together BITSians seeking guidance and alumni willing to share their knowledge, experience and perspective.\n\nWhether you are looking for guidance or ready to support a fellow BITSian, choose your role in the journey.\n\nRegister as a mentee: https://deeply-gate-2ad.notion.site/9b42294b0224832cade981f3905adc67 \nJoin as a mentor: https://deeply-gate-2ad.notion.site/80d2294b02248367919501785c6640af\n\nForms close on 7 August.",
-   "resources": "https://deeply-gate-2ad.notion.site/9b42294b0224832cade981f3905adc67",
-   "moreInfo": "https://deeply-gate-2ad.notion.site/80d2294b02248367919501785c6640af",
+   "resources": "",
+   "moreInfo": "",
    "link": ""
   }
  ],

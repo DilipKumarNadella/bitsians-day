@@ -330,9 +330,12 @@
     .replace(/\*\*_([^*_]+?)_\*\*/g, "<strong>$1</strong>")
     .replace(/\*\*([^*]+?)\*\*/g, "<strong>$1</strong>")
     .replace(/(^|[^_\w])_([^_]+?)_(?!\w)/g, "$1<em>$2</em>");
+  // Turn bare URLs into clickable links (run after esc + <br> substitution)
+  const linkifyUrls = (s) => s.replace(/(https?:\/\/[^\s<]+?)(?=[.,;:!?]?(?:\s|<br>|$))/g,
+    (u) => `<a href="${u}" target="_blank" rel="noopener">${u}</a>`);
   const formatDesc = (s) => esc(String(s == null ? "" : s)).replace(/\r/g, "")
     .split(/\n{2,}/).filter((p) => p.trim())
-    .map((p) => `<p>${mdInline(p.replace(/^[*+]\s?/gm, "• ").replace(/\n/g, "<br>"))}</p>`).join("");
+    .map((p) => `<p>${linkifyUrls(mdInline(p.replace(/^[*+]\s?/gm, "• ").replace(/\n/g, "<br>")))}</p>`).join("");
 
   // A meaningful call-to-action label for an initiative's primary link
   function linkLabel(f) {
@@ -418,7 +421,7 @@
     const groups = (Array.isArray(DATA.team) && DATA.team.length) ? DATA.team : TEAM_GROUPS;
 
     // These groups sit under their own "Core Teams" collapsible section
-    const CORE = ["marketing & communications", "finance", "people strategy"];
+    const CORE = ["marketing & communications", "finance", "people strategy", "merchandise team", "partnership/sponsorships & fundraising"];
     const crSubs = [], coreSubs = [];
     groups.forEach((g) => {
       (CORE.includes(String(g.name).trim().toLowerCase()) ? coreSubs : crSubs).push(g);
@@ -502,12 +505,22 @@
     if (isUrl(f.link)) links.push(`<a class="mini-link" href="${esc(f.link)}" target="_blank" rel="noopener">${esc(linkLabel(f))}</a>`);
     if (isUrl(f.moreInfo)) links.push(`<a class="mini-link" href="${esc(f.moreInfo)}" target="_blank" rel="noopener">More info</a>`);
     if (isUrl(f.community)) links.push(`<a class="mini-link" href="${esc(f.community)}" target="_blank" rel="noopener">Community</a>`);
+    // Pull labelled sign-up links (e.g. mentee / mentor) out of the description into buttons
+    const actions = [];
+    String(f.description || "").replace(/([^\n:]{0,60}?):\s*(https?:\/\/[^\s]+)/g, (_m, lbl, url) => {
+      const L = lbl.toLowerCase();
+      if (/mentee/.test(L)) actions.push(["Mentee sign up", url]);
+      else if (/mentor/.test(L)) actions.push(["Mentor sign up", url]);
+      return _m;
+    });
+    const actionsHtml = actions.map(([l, u]) => `<a class="btn btn-primary" href="${esc(u)}" target="_blank" rel="noopener">${esc(l)}</a>`).join("");
     openModal(`
       <span class="m-region" style="color:var(--red)">${esc(f.team || "BITSAA Initiative")}</span>
       <h2 class="m-title">${esc(f.name)}</h2>
       ${f.image ? `<div class="feature-banner"><img src="${esc(f.image)}" alt="${esc(f.name)}" onerror="this.closest('.feature-banner').remove()"/></div>` : ""}
       ${(f.poc || email) ? `<div class="m-poc">👤 ${esc(f.poc)}${f.poc && email ? " · " : ""}${email}</div>` : ""}
       ${f.description ? `<div class="m-desc">${formatDesc(f.description)}</div>` : ""}
+      ${actionsHtml ? `<div class="m-actions">${actionsHtml}</div>` : ""}
       ${links.length ? `<div class="links-note" style="margin-top:16px">Links &amp; resources</div><div class="feature-links">${links.join("")}</div>` : ""}`);
   }
 
