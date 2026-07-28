@@ -972,13 +972,13 @@
    "email": "Sukhiephotos@gmail.com",
    "phone": "(+91) 9820021627",
    "region": "India",
-   "time": "",
-   "venue": "",
-   "registration": "",
+   "time": "Saturday, 8th August from 11.30 AM onwards",
+   "venue": "HYLO Kala Ghoda, 2nd Floor, Building 30, K Dubash Marg, Kala Ghoda, Fort, Mumbai, Maharashtra 400001",
+   "registration": "https://pages.razorpay.com/bitsaamum26",
    "notes": "",
-   "lat": 19.055,
-   "lng": 72.8692,
-   "precise": false
+   "lat": 18.92056,
+   "lng": 72.83155,
+   "precise": true
   },
   {
    "city": "Nagpur",
