@@ -20,13 +20,13 @@
    "email": "s_tolat@hotmail.com",
    "phone": "+61 431612750",
    "region": "Australia/NZ",
-   "time": "",
-   "venue": "",
+   "time": "Saturday, 8th August from 6.30 pm till late",
+   "venue": "Oakleigh Indoor Sports Centre,4 Railway Ave, Oakleigh VIC 3166, Australia",
    "registration": "",
-   "notes": "",
-   "lat": -37.81425,
-   "lng": 144.96317,
-   "precise": false
+   "notes": "Activities:  Aussie ‘spin' on BITS style cricket; Meet & Greet; share experiences; Dinner\nCost (BITS-RMIT students):  $35 (cricket & dinner); $20 (dinner only)\nCost (BITS alumini):  $50",
+   "lat": -37.90851,
+   "lng": 145.10006,
+   "precise": true
   },
   {
    "city": "Perth",
@@ -566,13 +566,13 @@
    "email": "bahetig@gmail.com",
    "phone": "(+91) 9352240003",
    "region": "India",
-   "time": "TBA soon",
-   "venue": "TBC soon",
-   "registration": "",
+   "time": "Friday, 7th August from 7PM onwards",
+   "venue": "Ember Dine, 93/18, Beawar Rd, opposite Lawrence & Mayo School, Railway Quarters, Ajmer, Rajasthan 305001",
+   "registration": "https://www.bitsaa.org/e/bitsians-day-2026-ajmer/",
    "notes": "",
-   "lat": 26.4691,
-   "lng": 74.639,
-   "precise": false
+   "lat": -29.57862,
+   "lng": 31.08074,
+   "precise": true
   },
   {
    "city": "Andaman & Nicobar",
@@ -800,9 +800,9 @@
   },
   {
    "city": "Goa",
-   "volunteer": "Alumni Relations Division, BITS Goa",
+   "volunteer": "Alumni Relations Division, BITS Goa Prof. Sridevi",
    "email": "alumnirelations@goa.bits-pilani.ac.in",
-   "phone": "",
+   "phone": "(+91) 9890920623",
    "region": "India",
    "time": "7th August, 2026, Friday, 4:30 PM onwards",
    "venue": "B Dome, C- Wing, Pilani, Chicalim, Sancoale, Goa 403726",
@@ -1098,13 +1098,13 @@
    "email": "vankadara@gmail.com",
    "phone": "(+91) 9618884994",
    "region": "India",
-   "time": "",
-   "venue": "",
-   "registration": "",
+   "time": "Saturday, August 8th from 8PM onwards",
+   "venue": "The Summit by Vivier, Vivier Spaces, D.No.32-6-14 D, Chandra Rajeswara Rao Raod, Mogalrajapuram, Christurajupuram, Vijayawada, Andhra Pradesh 520010",
+   "registration": "https://www.bitsaa.org/e/bitsians-day-2026-vijayawada-amravati/",
    "notes": "",
-   "lat": 16.5062,
-   "lng": 80.648,
-   "precise": false
+   "lat": 16.50157,
+   "lng": 80.64415,
+   "precise": true
   },
   {
    "city": "Visakhapatnam",
@@ -2689,7 +2689,7 @@
    "members": [
     {
      "name": "Kushal Rathi",
-     "role": "People Strategy",
+     "role": "Lead, People Strategy",
      "email": "kushal.rathi@bitsaa.org",
      "linkedin": "",
      "photo": "assets/img/1pa9nZbLeZNdeAot4DAIz1FHV-4s4rToN.jpg"
@@ -2705,6 +2705,18 @@
      "email": "rishabh.jain@bitsaa.org",
      "linkedin": "",
      "photo": "assets/img/14IGc1EwCzbjn4xoShKEc9-XUUyURLT1t.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Partnership/Sponsorships & Fundraising",
+   "members": [
+    {
+     "name": "Nikita Sadhnani",
+     "role": "Lead",
+     "email": "Nikita.sadhnani@bitsaa.org",
+     "linkedin": "",
+     "photo": "assets/img/1Y8rqoQixl_alN63-wg1ADtcr_F8NEXJ5.jpg"
     }
    ]
   }
