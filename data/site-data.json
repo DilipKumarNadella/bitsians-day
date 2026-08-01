@@ -113,7 +113,7 @@
    "precise": true
   },
   {
-   "city": "Chiang Mai Thai,",
+   "city": "Chiang Mai, Thailand",
    "volunteer": "Rahul Thakur",
    "email": "rahul.thakur9985@gmail.com",
    "phone": "(+91) 7259378545",
@@ -122,8 +122,8 @@
    "venue": "",
    "registration": "",
    "notes": "",
-   "lat": 31.23247,
-   "lng": 121.43297,
+   "lat": 18.78828,
+   "lng": 98.98588,
    "precise": false
   },
   {
@@ -2277,6 +2277,12 @@
    "email": "koustubhdeshmukh@gmail.com"
   },
   {
+   "company": "ZS associates",
+   "city": "Pune",
+   "volunteer": "Atharva Chikte",
+   "email": "chikteatharva12@gmail.com"
+  },
+  {
    "company": "Turing.com",
    "city": "San Francisco, California, USA",
    "volunteer": "Ritwik chakradhar",
@@ -2305,6 +2311,12 @@
    "city": "Seattle",
    "volunteer": "Aparna Perwala, Eashan Sapre",
    "email": "aparna.perwala@gmail.com, eashan15sapre@gmail.com"
+  },
+  {
+   "company": "Amazon (Grace)",
+   "city": "Seattle - Bellevue",
+   "volunteer": "Sampath Mylavarapu",
+   "email": "sampathmylavarapu22@gmail.com"
   },
   {
    "company": "TikTok",
@@ -2367,6 +2379,12 @@
    "location": "Trondheim, Norway",
    "volunteer": "Nikhil Khedekar",
    "email": "nikhilvkhedekar@gmail.com"
+  },
+  {
+   "institute": "University of Groningen",
+   "location": "Groningen, Netherlands",
+   "volunteer": "Nikhil Garg",
+   "email": "ng1998@gmail.com"
   }
  ],
  "featured": [
