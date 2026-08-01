@@ -1569,12 +1569,26 @@
    "precise": false
   },
   {
+   "city": "Louisville, KY",
+   "volunteer": "Nikhil Deo",
+   "email": "nikhildeo@gmail.com",
+   "phone": "+1 614-309-3624",
+   "region": "US/Canada",
+   "time": "Sunday, August 9th at 4pm",
+   "venue": "9407 Truscott Falls Dr, Louisville, KY 40059, United States",
+   "registration": "",
+   "notes": "",
+   "lat": 38.25424,
+   "lng": -85.75941,
+   "precise": true
+  },
+  {
    "city": "Los Angeles, CA",
    "volunteer": "Vedant Bajaj",
    "email": "vedant.bajaj.2025@anderson.ucla.edu",
    "phone": "+1 310-266-9186",
    "region": "US/Canada",
-   "time": "Saturday, August 8th at 12pm",
+   "time": "US/Canada",
    "venue": "Mess Hall at FLIGHT, 1705 Flight Wy, Tustin, CA 92782, United States",
    "registration": "",
    "notes": "",
