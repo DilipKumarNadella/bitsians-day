@@ -22,6 +22,14 @@
     ["Japan", "https://bit.ly/4vbCa5W"],
   ];
 
+  // ---- Social wall (hashtag call-to-action) ----
+  const HASHTAGS = ["#BITSiansDay2026", "#25yearsofBITSAA", "#BITSAA"];
+  const SOCIAL_ICONS = {
+    ig: '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.52.01-4.76.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.39-.32-1.71-.17-.43-.37-.74-.69-1.06-.32-.32-.63-.52-1.06-.69-.32-.13-.81-.28-1.71-.32-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 110 10.92 5.46 5.46 0 010-10.92zm0 9a3.54 3.54 0 100-7.08 3.54 3.54 0 000 7.08zm6.95-9.22a1.28 1.28 0 11-2.55 0 1.28 1.28 0 012.55 0z"/></svg>',
+    x: '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg>',
+    li: '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>',
+  };
+
   // ---- TEAM (test data — edit names/roles/photos/links here) ----
   // photo: optional image URL; leave "" to show initials avatar.
   const TEAM_GROUPS = [
@@ -395,6 +403,77 @@
     // Donate tab replaced by a static Contact tab — nothing to render.
   }
 
+  /* ---------------- SOCIAL WALL ---------------- */
+  function copyText(el) {
+    const text = el.getAttribute("data-copy") || "";
+    const flash = () => { el.classList.add("copied"); setTimeout(() => el.classList.remove("copied"), 1400); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(flash).catch(() => fallbackCopy(text, flash));
+    } else fallbackCopy(text, flash);
+  }
+  function fallbackCopy(text, done) {
+    const ta = document.createElement("textarea");
+    ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.focus(); ta.select();
+    try { document.execCommand("copy"); } catch (e) { /* ignore */ }
+    document.body.removeChild(ta); if (done) done();
+  }
+
+  function platIcon(platform) {
+    const p = String(platform || "").toLowerCase();
+    if (p.includes("insta")) return SOCIAL_ICONS.ig;
+    if (p.includes("linked")) return SOCIAL_ICONS.li;
+    if (p.startsWith("x") || p.includes("twitter")) return SOCIAL_ICONS.x;
+    return "";
+  }
+  function postCard(p) {
+    const who = p.handle || p.name || "";
+    const icon = platIcon(p.platform);
+    const media = p.image
+      ? `<div class="post-media"><img src="${esc(p.image)}" alt="${esc(who || "BITSians' Day post")}" loading="lazy" onerror="this.closest('.post-media').remove()"/></div>`
+      : "";
+    const cap = p.caption ? `<p class="post-cap">${esc(shortText(p.caption, 150))}</p>` : "";
+    const whoHtml = who ? `<div class="post-who">${icon}<span>${esc(who)}</span></div>` : "";
+    const inner = `${media}<div class="post-body">${whoHtml}${cap}</div>`;
+    return isUrl(p.link)
+      ? `<a class="post-card" href="${esc(p.link)}" target="_blank" rel="noopener">${inner}</a>`
+      : `<article class="post-card">${inner}</article>`;
+  }
+
+  function renderSocial() {
+    const wrap = $("#socialWall");
+    if (!wrap) return;
+    const tags = HASHTAGS;
+    const tagText = tags.join(" ");
+    const primary = tags[0].replace(/^#/, "");
+    const igUrl = `https://www.instagram.com/explore/tags/${encodeURIComponent(primary)}/`;
+    const xPost = `https://x.com/intent/tweet?text=${encodeURIComponent("Celebrating BITSians' Day 2026! " + tagText)}`;
+    const liUrl = `https://www.linkedin.com/feed/hashtag/?keywords=${encodeURIComponent(primary)}`;
+    const chip = (t) =>
+      `<button class="hashtag-chip" type="button" data-copy="${esc(t)}"><span>${esc(t)}</span><span class="hc-ico" aria-hidden="true">⧉</span></button>`;
+    const cta = (cls, href, icon, title, sub) =>
+      `<a class="social-cta ${cls}" href="${href}" target="_blank" rel="noopener">${icon}<span class="sc-text"><b>${esc(title)}</b><small>${esc(sub)}</small></span></a>`;
+    wrap.innerHTML = `
+      <p class="social-intro">Snap a photo at your city, campus or company meet, add the official hashtags, and post it on Instagram, X or LinkedIn. Tag us and your moment becomes part of the global BITSians' Day celebration.</p>
+      <div class="hashtag-card">
+        <span class="hashtag-label">Use these hashtags</span>
+        <div class="hashtag-row">
+          ${tags.map(chip).join("")}
+          <button class="btn btn-primary copy-all" type="button" data-copy="${esc(tagText)}">Copy all</button>
+        </div>
+      </div>
+      <ol class="social-steps">
+        <li><span class="ss-num">1</span><div><b>Snap</b> a photo at your meet</div></li>
+        <li><span class="ss-num">2</span><div><b>Copy</b> the hashtags above</div></li>
+        <li><span class="ss-num">3</span><div><b>Post</b> &amp; tag us on your platform</div></li>
+      </ol>
+      <div class="social-platforms">
+        ${cta("ig", igUrl, SOCIAL_ICONS.ig, "Instagram", "See #" + primary + " posts")}
+        ${cta("x", xPost, SOCIAL_ICONS.x, "Post on X", "Share with the hashtags")}
+        ${cta("li", liUrl, SOCIAL_ICONS.li, "LinkedIn", "See the hashtag feed")}
+      </div>`;
+  }
+
   /* ---------------- TEAM ---------------- */
   const initials = (name) => String(name || "").trim().split(/\s+/).slice(0, 2).map((w) => w[0] || "").join("").toUpperCase();
   const ICON_MAIL = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13A1.5 1.5 0 0 1 20.5 20h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.05 5.29a1.2 1.2 0 0 0 1.5 0L19.8 6H4.2ZM20 7.7l-6.65 4.99a3.2 3.2 0 0 1-3.9 0L2.8 7.7V18h17.2V7.7Z"/></svg>';
@@ -541,6 +620,8 @@
   }
 
   document.addEventListener("click", (e) => {
+    const cop = e.target.closest("[data-copy]");
+    if (cop) { copyText(cop); return; }
     const cc = e.target.closest("[data-open-city]");
     if (cc && !cc.closest(".leaflet-popup")) return openCityModal(cityMeets[+cc.dataset.openCity]);
     const co = e.target.closest("[data-open-company]");
@@ -572,6 +653,7 @@
     renderInstitute();
     renderFeatured();
     renderMerch();
+    renderSocial();
     renderTeam();
 
     const hash = location.hash.replace("#", "");

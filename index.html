@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
-  <link rel="stylesheet" href="assets/styles.css?v=16" />
+  <link rel="stylesheet" href="assets/styles.css?v=20" />
 </head>
 <body>
   <!-- Decorative background -->
@@ -40,6 +40,7 @@
       <button class="nav-link" data-tab="institute">Campuses</button>
       <button class="nav-link" data-tab="initiatives">Initiatives</button>
       <button class="nav-link" data-tab="merch">Merch</button>
+      <button class="nav-link" data-tab="social">Social</button>
       <button class="nav-link" data-tab="contact">Contact</button>
     </nav>
     <a class="btn btn-ghost header-cta" data-tab="map">Find a meet</a>
@@ -94,6 +95,12 @@
           <h3>Campus Meets</h3>
           <p>Reunite with alumni pursuing higher studies across the globe.</p>
           <span class="strip-link">See campuses →</span>
+        </div>
+        <div class="strip-card" data-tab="social">
+          <span class="strip-ico">📸</span>
+          <h3>Social Wall</h3>
+          <p>Post your BITSians' Day moments with our hashtags and join the buzz.</p>
+          <span class="strip-link">Join the wall →</span>
         </div>
         <div class="strip-card" data-tab="contact">
           <span class="strip-ico">✉️</span>
@@ -226,6 +233,26 @@
       <div class="feature-grid" id="merchGrid"></div>
     </section>
 
+    <!-- SOCIAL WALL -->
+    <section class="tab-panel" id="social" data-tab="social">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Get social</p>
+          <h2>Share your BITSians' Day</h2>
+        </div>
+      </div>
+      <div class="social-wall" id="socialWall"></div>
+
+      <!-- Live hashtag wall (Curator.io) -->
+      <div class="curator-wall">
+        <div class="wall-head">
+          <h3>what’s trending..</h3>
+          <span class="wall-count">Live from social</span>
+        </div>
+        <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section class="tab-panel" id="contact" data-tab="contact">
       <div class="panel-head">
@@ -294,7 +321,16 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-  <script src="assets/data.js?v=1785407390"></script>
-  <script src="assets/app.js?v=17"></script>
-</body>
+  <script src="assets/data.js?v=1785573073"></script>
+  <script src="assets/app.js?v=20"></script>
+  <!-- Curator.io live hashtag feed loader -->
+  <script type="text/javascript">
+    /* curator-feed-default-feed-layout */
+    (function () {
+      var i, e, d = document, s = "script";
+      i = d.createElement("script"); i.async = 1; i.charset = "UTF-8";
+      i.src = "https://cdn.curator.io/published/0e92239d-6674-4817-a14c-56a70977cf2e.js";
+      e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e);
+    })();
+  </script></body>
 </html>

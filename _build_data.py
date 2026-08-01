@@ -436,6 +436,29 @@ if _ml_rows:
         if region and link:
             merch_links.append([region, link])
 
+# ---------- Social wall (tab: Name | Handle | Platform | Image | Caption | Link | Hashtags) ----------
+social = []
+_sw_rows = _optional("Social Wall", ["platform", "image"])
+if _sw_rows:
+    for r in _sw_rows[1:]:
+        img = cache_image(r[3], "w1000") if len(r) > 3 and clean(r[3]) else ""
+        cap = clean(r[4]) if len(r) > 4 else ""
+        name = clean(r[0]) if len(r) > 0 else ""
+        if not (img or cap):
+            continue
+        tags = []
+        if len(r) > 6 and clean(r[6]):
+            tags = [t.strip().lstrip("#") for t in re.split(r"[,\s]+", clean(r[6])) if t.strip()]
+        social.append({
+            "name": name,
+            "handle": clean(r[1]) if len(r) > 1 else "",
+            "platform": clean(r[2]).lower() if len(r) > 2 else "",
+            "image": img,
+            "caption": cap,
+            "link": clean(r[5]) if len(r) > 5 else "",
+            "hashtags": tags,
+        })
+
 
 data = {
     "cityMeets": city_meets,
@@ -446,6 +469,7 @@ data = {
     "donate": donate,
     "team": team,
     "merchLinks": merch_links,
+    "social": social,
 }
 
 with open(os.path.join(OUT_DIR, "site-data.json"), "w", encoding="utf-8") as f:
@@ -478,7 +502,7 @@ print("SUMMARY")
 print("city meets:", len(city_meets), "geocoded:", geocoded)
 print("company:", len(company_meets), "institute:", len(institute_meets))
 print("featured:", len(featured), "merch:", len(merch), "donate:", len(donate))
-print("team groups:", len(team), "merch links:", len(merch_links))
+print("team groups:", len(team), "merch links:", len(merch_links), "social posts:", len(social))
 missing = [c["city"] for c in city_meets if c["lat"] is None]
 print("missing coords:", missing)
 print(f"[{datetime.datetime.now():%Y-%m-%d %H:%M:%S}] sync done — wrote assets/data.js")
