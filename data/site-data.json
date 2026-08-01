@@ -1,6 +1,20 @@
 {
  "cityMeets": [
   {
+   "city": "Adelaide",
+   "volunteer": "Pradyumna",
+   "email": "pkummamuru@gmail.com",
+   "phone": "(+61) 503336215",
+   "region": "Australia/NZ",
+   "time": "",
+   "venue": "",
+   "registration": "",
+   "notes": "",
+   "lat": -34.92818,
+   "lng": 138.59993,
+   "precise": false
+  },
+  {
    "city": "Brisbane",
    "volunteer": "Ashok Gupta",
    "email": "agupta51@gmail.com",
@@ -97,6 +111,20 @@
    "lat": -41.22392,
    "lng": 174.82257,
    "precise": true
+  },
+  {
+   "city": "Chiang Mai Thai,",
+   "volunteer": "Rahul Thakur",
+   "email": "rahul.thakur9985@gmail.com",
+   "phone": "(+91) 7259378545",
+   "region": "APAC",
+   "time": "",
+   "venue": "",
+   "registration": "",
+   "notes": "",
+   "lat": 31.23247,
+   "lng": 121.43297,
+   "precise": false
   },
   {
    "city": "Hongkong",
@@ -203,12 +231,12 @@
    "phone": "(+91) 9030203399",
    "region": "Europe",
    "time": "Thursday, August 6th from 7-10 pm CEST",
-   "venue": "To be finalized soon",
+   "venue": "Cantina L'Esquina, Scheldeplein 2, 1078 GR Amsterdam, Netherlands",
    "registration": "",
    "notes": "",
-   "lat": 52.37308,
-   "lng": 4.89245,
-   "precise": false
+   "lat": 52.34469,
+   "lng": 4.8905,
+   "precise": true
   },
   {
    "city": "Barcelona, Spain",
@@ -259,12 +287,12 @@
    "phone": "(+91) 9772047997",
    "region": "Europe",
    "time": "Saturday, August 1st from 4pm onwards",
-   "venue": "",
+   "venue": "Old Crown Girton, 89 High St, Girton, Cambridge CB3 0QD, United Kingdom",
    "registration": "",
    "notes": "",
-   "lat": 52.19758,
-   "lng": 0.13915,
-   "precise": false
+   "lat": 52.24258,
+   "lng": 0.08139,
+   "precise": true
   },
   {
    "city": "Copenhagen, Denmark",
@@ -278,6 +306,20 @@
    "notes": "",
    "lat": 55.68672,
    "lng": 12.57007,
+   "precise": false
+  },
+  {
+   "city": "Cork, Ireland",
+   "volunteer": "Aditya Manglik",
+   "email": "f2014296p@alumni.bits-pilani.ac.in",
+   "phone": "(+41) 762425935",
+   "region": "Europe",
+   "time": "",
+   "venue": "",
+   "registration": "",
+   "notes": "",
+   "lat": 51.89851,
+   "lng": -8.47264,
    "precise": false
   },
   {
@@ -356,13 +398,13 @@
    "email": "karthik.satthapan@gmail.com, sameersaral@yahoo.com",
    "phone": "(+358) 50 4323887, (+358) 504406704",
    "region": "Europe",
-   "time": "",
-   "venue": "",
+   "time": "Sunday, 16th August at 12.00 pm",
+   "venue": "Haltia - The Finnish Nature Centre, Nuuksiontie 84, 02820 Espoo, Finland",
    "registration": "",
    "notes": "",
-   "lat": 60.16662,
-   "lng": 24.94354,
-   "precise": false
+   "lat": 60.29371,
+   "lng": 24.55704,
+   "precise": true
   },
   {
    "city": "London, UK",
@@ -441,12 +483,12 @@
    "phone": "(+33) 769603765",
    "region": "Europe",
    "time": "Sunday, August 2nd from 12 PM to 5PM",
-   "venue": "",
+   "venue": "Mumbai Lounge, 31 Bd Victor, 75015 Paris, France",
    "registration": "",
    "notes": "",
-   "lat": 48.85889,
-   "lng": 2.32004,
-   "precise": false
+   "lat": 48.83427,
+   "lng": 2.28487,
+   "precise": true
   },
   {
    "city": "Saarbrucken, Germany",
@@ -748,13 +790,13 @@
    "email": "",
    "phone": "(+91) 8971387666",
    "region": "India",
-   "time": "",
-   "venue": "",
+   "time": "Saturday, 8th August from 7pm onwards",
+   "venue": "The Avenue Regent, The Avenue Regent 39, 2026, Mahatma Gandhi Rd, Jos Junction, Pallimukku, Kochi, Ernakulam, Kerala 682016",
    "registration": "",
    "notes": "",
    "lat": 9.9679,
    "lng": 76.24444,
-   "precise": false
+   "precise": true
   },
   {
    "city": "Coimbatore",
@@ -825,6 +867,20 @@
    "lat": 26.17861,
    "lng": 91.7344,
    "precise": true
+  },
+  {
+   "city": "Gwalior",
+   "volunteer": "Satyendra Kumar Jain",
+   "email": "jainsk56@hotmail.com",
+   "phone": "(+91) 9425114150",
+   "region": "India",
+   "time": "",
+   "venue": "",
+   "registration": "",
+   "notes": "",
+   "lat": 26.20372,
+   "lng": 78.15736,
+   "precise": false
   },
   {
    "city": "Hyderabad - Saturday Breakfast after walk",
@@ -1275,6 +1331,20 @@
    "precise": false
   },
   {
+   "city": "Johannesburg, South Africa",
+   "volunteer": "Sanjay Dharwadker",
+   "email": "sanjayd_india@yahoo.co.uk",
+   "phone": "(+27) 833188009",
+   "region": "RoW",
+   "time": "",
+   "venue": "",
+   "registration": "",
+   "notes": "",
+   "lat": -26.205,
+   "lng": 28.04972,
+   "precise": false
+  },
+  {
    "city": "Nairobi, Kenya",
    "volunteer": "Ankit Jindal",
    "email": "s.ratna.sandeep@gmail.com, raamcharran@gmail.com",
@@ -1434,13 +1504,13 @@
    "email": "rudresh95@gmail.com",
    "phone": "+1 857-352-7239",
    "region": "US/Canada",
-   "time": "",
-   "venue": "",
+   "time": "Friday, August 7th from 6pm onwards",
+   "venue": "Spice Trade Brewery & Kitchen, 8775 E Orchard Rd Ste 811, Greenwood Village, CO 80111, United States",
    "registration": "",
    "notes": "",
-   "lat": 39.73924,
-   "lng": -104.98486,
-   "precise": false
+   "lat": 39.61004,
+   "lng": -104.88627,
+   "precise": true
   },
   {
    "city": "Detroit, MI",
@@ -1504,13 +1574,13 @@
    "email": "vedant.bajaj.2025@anderson.ucla.edu",
    "phone": "+1 310-266-9186",
    "region": "US/Canada",
-   "time": "",
-   "venue": "",
+   "time": "Saturday, August 8th at 12pm",
+   "venue": "Mess Hall at FLIGHT, 1705 Flight Wy, Tustin, CA 92782, United States",
    "registration": "",
    "notes": "",
-   "lat": 34.05369,
-   "lng": -118.24277,
-   "precise": false
+   "lat": 33.70508,
+   "lng": -117.83858,
+   "precise": true
   },
   {
    "city": "Miami, FL",
@@ -1640,17 +1710,17 @@
   },
   {
    "city": "Portland, OR",
-   "volunteer": "Prafful",
-   "email": "",
-   "phone": "",
+   "volunteer": "Prafful Golani",
+   "email": "praffulgolani05@gmail.com",
+   "phone": "+1 (612) 707-6601",
    "region": "US/Canada",
-   "time": "",
-   "venue": "",
-   "registration": "",
+   "time": "Friday, August 7th from 6pm to 8pm",
+   "venue": "Hillsboro Downtown Station, 320 SE Baseline St, Hillsboro, OR 97123, United States",
+   "registration": "https://www.bitsaa.org/e/bitsian-day-2026-portland/",
    "notes": "",
-   "lat": 45.52025,
-   "lng": -122.67419,
-   "precise": false
+   "lat": 45.51965,
+   "lng": -122.98542,
+   "precise": true
   },
   {
    "city": "Raleigh-Durham, NC",
