@@ -1616,13 +1616,13 @@
    "email": "saini.vikram@gmail.com, samyak.jain@bitsaa.org",
    "phone": "+1 651-442-9454, +1 507-319-5073",
    "region": "US/Canada",
-   "time": "",
-   "venue": "",
+   "time": "Friday, August 7th, 2026, 7:00-10:00 PM",
+   "venue": "The Market At Malcolm Yards, 501 30th Ave SE, Minneapolis, MN 55414",
    "registration": "",
    "notes": "",
-   "lat": 44.9773,
-   "lng": -93.26547,
-   "precise": false
+   "lat": 44.97285,
+   "lng": -93.21356,
+   "precise": true
   },
   {
    "city": "Montreal, Canada",
