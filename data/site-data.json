@@ -1421,12 +1421,12 @@
    "phone": "+1 479-721-0639",
    "region": "US/Canada",
    "time": "Friday, 7th August 6pm to 10pm",
-   "venue": "TBD",
+   "venue": "Pedlar's pub - 500 S Main St, Bentonville, AR 72712",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-nwa-northwest-arkansas/",
    "notes": "",
    "lat": 36.37286,
    "lng": -94.20879,
-   "precise": false
+   "precise": true
   },
   {
    "city": "Boston, MA",
