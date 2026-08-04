@@ -332,9 +332,9 @@
    "venue": "TBD",
    "registration": "",
    "notes": "",
-   "lat": 21.2365,
-   "lng": 81.67106,
-   "precise": true
+   "lat": 53.34938,
+   "lng": -6.26056,
+   "precise": false
   },
   {
    "city": "Edinburgh, Scotland",
@@ -598,8 +598,8 @@
    "venue": "Crystal Hall, Taj Skyline, Sankalp Square-III, Sindhu Bhavan Rd, opp. Saket 3, nr. Neelkanth Green, PRL Colony, Thaltej, Shilaj, Ahmedabad, Gujarat 380058",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-ahmedabad/",
    "notes": "Chief guest VC BITS Pilan iProf. Ramgopal Rao, and Dean Alumni Relations, Prof. Arya Kumar",
-   "lat": 23.05444,
-   "lng": 72.47208,
+   "lat": 23.02363,
+   "lng": 72.47356,
    "precise": true
   },
   {
@@ -612,8 +612,8 @@
    "venue": "Ember Dine, 93/18, Beawar Rd, opposite Lawrence & Mayo School, Railway Quarters, Ajmer, Rajasthan 305001",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-ajmer/",
    "notes": "",
-   "lat": -29.57862,
-   "lng": 31.08074,
+   "lat": 26.46177,
+   "lng": 74.63613,
    "precise": true
   },
   {
@@ -654,8 +654,8 @@
    "venue": "House of Commons, 1st Floor, 1131, 100 Feet Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560088",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-bangalore/",
    "notes": "Entry: No registration fee — pay as you eat at the venue\n\n⚠️ Important: Kindly stick to the venue you've selected. Each venue has limited capacity, so entry at a different venue than the one you chose cannot be guaranteed if there's a crunch. We appreciate your cooperation.",
-   "lat": 12.9963,
-   "lng": 77.54528,
+   "lat": 12.96983,
+   "lng": 77.62959,
    "precise": true
   },
   {
@@ -668,8 +668,8 @@
    "venue": "Indian Biere House, 4&5, 15th Cross, 100 Feet Ring Rd, opposite SBI Bank, 5th Phase, J. P. Nagar, Bengaluru, Karnataka 560078",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-bangalore/",
    "notes": "Entry: No registration fee — pay as you eat at the venue\n\n⚠️ Important: Kindly stick to the venue you've selected. Each venue has limited capacity, so entry at a different venue than the one you chose cannot be guaranteed if there's a crunch. We appreciate your cooperation.",
-   "lat": 12.90969,
-   "lng": 77.58661,
+   "lat": 12.91648,
+   "lng": 77.59675,
    "precise": true
   },
   {
@@ -682,8 +682,8 @@
    "venue": "Maize & Malt - Craft Brewery & Kitchen, 3, 4th Cross Rd, near Whitefield, Vigneshwar Nagar, Kaveri Nagar, Mahadevapura, Bengaluru, Karnataka 560048",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-bangalore/",
    "notes": "Entry: No registration fee — pay as you eat at the venue\n\n⚠️ Important: Kindly stick to the venue you've selected. Each venue has limited capacity, so entry at a different venue than the one you chose cannot be guaranteed if there's a crunch. We appreciate your cooperation.",
-   "lat": 12.99654,
-   "lng": 77.69272,
+   "lat": 12.9729,
+   "lng": 77.74727,
    "precise": true
   },
   {
@@ -738,8 +738,8 @@
    "venue": "The Celebrations Resort & Restaurant, behind Maanshiva complex, near C.I heights apartments, Vineet Kunj, Danish Kunj, Kolar Rd, Bhopal, Madhya Pradesh 462042",
    "registration": "BITSians' Day 2026 - Bhopal chapter - BITS Alumni Association",
    "notes": "",
-   "lat": 23.17405,
-   "lng": 77.4174,
+   "lat": 23.16834,
+   "lng": 77.41701,
    "precise": true
   },
   {
@@ -766,8 +766,8 @@
    "venue": "Romeo Lane, Shop no-4, Maya Garden Magnesia, 5 6 7 12A 14, Ambala - Chandigarh Expy, Zirakpur, Nagla, Punjab 140603",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-chandigarh/",
    "notes": "",
-   "lat": 30.40214,
-   "lng": 76.89561,
+   "lat": 30.74367,
+   "lng": 76.78226,
    "precise": true
   },
   {
@@ -780,8 +780,8 @@
    "venue": "Alumni Club, No. 1, Boat Club Rd, RA Puram, Raja Annamalaipuram, Chennai, Greater Chennai, Tamil Nadu 600028",
    "registration": "https://pages.razorpay.com/pl_TA85l4AqqtMqnj/view",
    "notes": "",
-   "lat": 13.0739,
-   "lng": 80.24659,
+   "lat": 13.02547,
+   "lng": 80.26194,
    "precise": true
   },
   {
@@ -794,8 +794,8 @@
    "venue": "The Avenue Regent, The Avenue Regent 39, 2026, Mahatma Gandhi Rd, Jos Junction, Pallimukku, Kochi, Ernakulam, Kerala 682016",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-kochi/",
    "notes": "",
-   "lat": 9.9679,
-   "lng": 76.24444,
+   "lat": 9.96787,
+   "lng": 76.24567,
    "precise": true
   },
   {
@@ -813,17 +813,17 @@
    "precise": false
   },
   {
-   "city": "Dehradun",
+   "city": "16th August, 11:00 AM",
    "volunteer": "Shubham Gupta",
    "email": "shubham2490@gmail.com",
    "phone": "(+91)9599665612",
    "region": "India",
-   "time": "9th August, 11:00 AM",
+   "time": "16th August, 11:00 AM",
    "venue": "Foresta Cafe - Multi-Cuisine Restaurant, 207 D Tibetan Lane, Rajpur Rd, near GRD College, Dehradun, Uttarakhand 248001",
    "registration": "BITSians' Day 2026 - Dehradun chapter - BITS Alumni Association",
    "notes": "",
-   "lat": 28.974,
-   "lng": 79.38965,
+   "lat": 30.33126,
+   "lng": 78.04054,
    "precise": true
   },
   {
@@ -836,8 +836,8 @@
    "venue": "AAIOI Gym, AAI Officers Institute, Safdarjung Airport, B-1 Bunglow, Delhi Flying Club Rd, Old Area, Satya Sadan, New Delhi, Delhi 110003",
    "registration": "https://pages.razorpay.com/pl_TA85ZnfsnEcTtv/view",
    "notes": "Tickets selling fast, Early bird sold out Standard registration Rs.1899 and Onspot registration Rs. 2199",
-   "lat": 28.6139,
-   "lng": 77.20901,
+   "lat": 28.42209,
+   "lng": 77.1043,
    "precise": true
   },
   {
@@ -850,8 +850,8 @@
    "venue": "B Dome, C- Wing, Pilani, Chicalim, Sancoale, Goa 403726",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-goa/",
    "notes": "",
-   "lat": 15.4064,
-   "lng": 73.89294,
+   "lat": 15.38396,
+   "lng": 73.87407,
    "precise": true
   },
   {
@@ -864,8 +864,8 @@
    "venue": "Miami by Guwahati Heights, MG Rd, opposite to FISH MARKET, Uzan Bazar, Guwahati, Assam 781001",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-guwahati/",
    "notes": "",
-   "lat": 26.17861,
-   "lng": 91.7344,
+   "lat": 26.1757,
+   "lng": 91.74871,
    "precise": true
   },
   {
@@ -892,8 +892,8 @@
    "venue": "Taj Mahal Hotel, 570, Road Number 92, MLA Colony, Film Nagar, 570, Road No. 92, Jubilee Hills, Hyderabad, Telangana 500096",
    "registration": "https://forms.gle/5iBV65FHnDxHDBxt8",
    "notes": "Breakfast starts at 8 AM and plan is to wrap up by 10AM. Venue to be announced soon",
-   "lat": 17.43084,
-   "lng": 78.41029,
+   "lat": 17.41454,
+   "lng": 78.41588,
    "precise": true
   },
   {
@@ -906,8 +906,8 @@
    "venue": "Firefly Club Hyderabad, 5TH FLOOR, The Hub, Sarath City Capital Mall, Kondapur, Whitefields, Gachibowli, Hyderabad, Telangana 500084",
    "registration": "https://www.bitsaa.org/f/bitsians-day-2026-hyderabad",
    "notes": "",
-   "lat": 17.47093,
-   "lng": 78.33242,
+   "lat": 17.46266,
+   "lng": 78.36145,
    "precise": true
   },
   {
@@ -948,8 +948,8 @@
    "venue": "Jaipur Marriott Hotel, Ashram Marg, near Jawahar Circle, Jai Jawan-2, Choti Chopad, Chandrakala Colony, Durgapura, Jaipur, Rajasthan 302015",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-jaipur/",
    "notes": "",
-   "lat": 26.85509,
-   "lng": 75.78702,
+   "lat": 26.8798,
+   "lng": 75.79664,
    "precise": true
   },
   {
@@ -962,8 +962,8 @@
    "venue": "The Bengal Lounge, 6, Netaji Subhas Rd, Loha Patti, Bara Bazar, Jorasanko, Kolkata, West Bengal 700001",
    "registration": "https://www.theticket9.com/event/bitsaakol-bd26",
    "notes": "",
-   "lat": 22.58341,
-   "lng": 88.35625,
+   "lat": 22.5641,
+   "lng": 88.34988,
    "precise": true
   },
   {
@@ -990,8 +990,8 @@
    "venue": "The Grand JBR, CF-129, Viraj Khand Rd, Viraj Khand-4, Viraj Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010",
    "registration": "https://www.bitsaa.org/e/bitsian-s-day-2026-lucknow/",
    "notes": "1600/person - food.  Drinks will be paid by participants if they take at the venue.",
-   "lat": 26.84209,
-   "lng": 80.94782,
+   "lat": 26.85083,
+   "lng": 81.00385,
    "precise": true
   },
   {
@@ -1004,8 +1004,8 @@
    "venue": "Fortune Pandiyan Hotel, SH 72, Outpost, Ramaond Reserve Line, Madurai, Tamil Nadu 625002",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-madurai/",
    "notes": "",
-   "lat": 9.94031,
-   "lng": 78.13169,
+   "lat": 9.93703,
+   "lng": 78.13207,
    "precise": true
   },
   {
@@ -1032,8 +1032,8 @@
    "venue": "HYLO Kala Ghoda, 2nd Floor, Building 30, K Dubash Marg, Kala Ghoda, Fort, Mumbai, Maharashtra 400001",
    "registration": "https://pages.razorpay.com/bitsaamum26",
    "notes": "",
-   "lat": 18.92056,
-   "lng": 72.83155,
+   "lat": 18.99157,
+   "lng": 72.85392,
    "precise": true
   },
   {
@@ -1060,8 +1060,8 @@
    "venue": "Anna Idli, Plot No: 4,8, 9, Next to Sonchafa Jewellers, College Rd, Canada Corner, Nashik, Maharashtra 422005",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-nashik/",
    "notes": "",
-   "lat": 20.00251,
-   "lng": 73.76968,
+   "lat": 20.0059,
+   "lng": 73.76623,
    "precise": true
   },
   {
@@ -1088,8 +1088,8 @@
    "venue": "Anandha Inn Convention Centre and Suites, No -154, Sardar Vallabbhai Patel Salai, Thiruvalluvar Nagar, Puducherry, 605001",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-pondicherry/",
    "notes": "",
-   "lat": 52.28381,
-   "lng": 20.92719,
+   "lat": 11.93369,
+   "lng": 79.83041,
    "precise": true
   },
   {
@@ -1102,8 +1102,8 @@
    "venue": "Pivo Garten, Sr. no. 93/11, Upper Koregaon Park, Mundhwa, Pune, Maharashtra 411036",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-pune",
    "notes": "UPI ID: 9823162807@timecosmos. Rs. 1000 for Alumni and Rs. 500 for students",
-   "lat": 18.53432,
-   "lng": 73.92983,
+   "lat": 18.53128,
+   "lng": 73.93798,
    "precise": true
   },
   {
@@ -1116,8 +1116,8 @@
    "venue": "Tea Post, Shop No 14/15, Ground Floor, Zircon Plus, Dabholi Rd, opp. Avalon Commercial Hub, Sahyog Society, Katargam, Surat, Gujarat 395004",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-surat/",
    "notes": "",
-   "lat": 21.22882,
-   "lng": 72.82531,
+   "lat": 21.22322,
+   "lng": 72.82384,
    "precise": true
   },
   {
@@ -1158,8 +1158,8 @@
    "venue": "The Summit by Vivier, Vivier Spaces, D.No.32-6-14 D, Chandra Rajeswara Rao Raod, Mogalrajapuram, Christurajupuram, Vijayawada, Andhra Pradesh 520010",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-vijayawada-amravati/",
    "notes": "",
-   "lat": 16.50031,
-   "lng": 80.6458,
+   "lat": 16.50162,
+   "lng": 80.65447,
    "precise": true
   },
   {
@@ -1424,9 +1424,9 @@
    "venue": "TBD",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-nwa-northwest-arkansas/",
    "notes": "",
-   "lat": 21.2365,
-   "lng": 81.67106,
-   "precise": true
+   "lat": 36.37286,
+   "lng": -94.20879,
+   "precise": false
   },
   {
    "city": "Boston, MA",
@@ -1480,9 +1480,9 @@
    "venue": "TBD",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-columbus-oh/",
    "notes": "",
-   "lat": 21.2365,
-   "lng": 81.67106,
-   "precise": true
+   "lat": 39.96226,
+   "lng": -83.00071,
+   "precise": false
   },
   {
    "city": "Dallas, TX",
@@ -1494,8 +1494,8 @@
    "venue": "Elysium - Live Music Bar, 7550 State Hwy 121 Ste 100, McKinney, TX 75070, United States",
    "registration": "",
    "notes": "",
-   "lat": 33.17246,
-   "lng": -96.69391,
+   "lat": 32.95749,
+   "lng": -96.76848,
    "precise": true
   },
   {

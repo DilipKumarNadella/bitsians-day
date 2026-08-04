@@ -203,6 +203,24 @@ COUNTRY_HINT = {
     "Middle East": "",
 }
 
+PLACEHOLDER_TEXT = {
+    "tbd",
+    "na",
+    "n/a",
+    "none",
+    "nil",
+    "to be decided",
+    "to be announced",
+    "coming soon",
+}
+
+# Bad cache keys from historically ambiguous queries. These should not be reused
+# because they produce visibly incorrect marker positions.
+STALE_CACHE_KEYS = {
+    "TBD",
+    "248001, Uttarakhand 248001",
+}
+
 
 OVERRIDES = {
     "Hyderabad - Breakfast after walk": [17.385, 78.4867],
@@ -215,6 +233,27 @@ OVERRIDES = {
     "Sydney Lunch meet - Parramatta": [-33.8150, 151.0000],
     "Vijayawada, India": [16.5062, 80.648],
 }
+
+
+def is_placeholder_text(text):
+    text = re.sub(r"\s+", " ", (text or "").strip().lower())
+    text = text.strip("-., ")
+    return text in PLACEHOLDER_TEXT
+
+
+def purge_stale_cache_entries():
+    removed = []
+    for k in list(cache.keys()):
+        if k in STALE_CACHE_KEYS or is_placeholder_text(k):
+            removed.append(k)
+            del cache[k]
+    if removed:
+        with open(CACHE_PATH, "w", encoding="utf-8") as f:
+            json.dump(cache, f)
+        print("removed stale geocode cache keys:", ", ".join(sorted(removed)))
+
+
+purge_stale_cache_entries()
 
 
 def geo_lookup(query):
@@ -244,12 +283,13 @@ def geo_lookup(query):
     return latlon
 
 
-def venue_variants(venue):
+def venue_variants(venue, city="", region=""):
     """Generate progressively simpler geocoding queries for a venue address.
     Ordered from most precise to most reliable so we still land on the correct
     neighbourhood (e.g. Madhapur vs Gachibowli) even when the full string fails."""
     parts = [p.strip() for p in re.split(r"[,\n]", venue) if p.strip()]
-    country = parts[-1] if parts else ""
+    hint = COUNTRY_HINT.get(region, "")
+    country = hint or (parts[-1] if parts else "")
     variants = []
     if parts:
         variants.append(", ".join(parts))            # full address
@@ -259,6 +299,10 @@ def venue_variants(venue):
     m = re.search(r"\b(\d{5,6})\b", venue)
     if m:
         pin = m.group(1)
+        if city and country:
+            variants.append(f"{pin}, {city}, {country}")
+        if city:
+            variants.append(f"{pin}, {city}")
         variants.append(f"{pin}, {country}".strip(", "))
     # Locality + city + country
     if len(parts) >= 3:
@@ -276,8 +320,8 @@ def venue_variants(venue):
 def geocode_meet(rec):
     """Prefer the precise venue address; fall back to the city centre."""
     # 1) Venue address with progressive fallbacks (true pin within a city)
-    if rec["venue"]:
-        for q in venue_variants(rec["venue"]):
+    if rec["venue"] and not is_placeholder_text(rec["venue"]):
+        for q in venue_variants(rec["venue"], rec["city"], rec["region"]):
             ll = geo_lookup(q)
             if ll:
                 return ll, True
@@ -286,6 +330,9 @@ def geocode_meet(rec):
         return OVERRIDES[rec["city"]], False
     # 3) City-centre fallback
     hint = COUNTRY_HINT.get(rec["region"], "")
+    legacy_key = f"{rec['city']}|{rec['region']}"
+    if legacy_key in cache and cache[legacy_key]:
+        return cache[legacy_key], False
     cq = f"{rec['city']}, {hint}" if hint else rec["city"]
     return geo_lookup(cq), False
 
