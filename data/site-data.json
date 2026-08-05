@@ -354,7 +354,7 @@
    "city": "Frankfurt, Germany",
    "volunteer": "Monica Natu",
    "email": "monicanatu@gmail.com",
-   "phone": "(49) 15213817057",
+   "phone": "(+49) 15213817057",
    "region": "Europe",
    "time": "",
    "venue": "",
@@ -393,12 +393,26 @@
    "precise": true
   },
   {
+   "city": "Hamburg, Germany",
+   "volunteer": "Azhagappan Sivaraman",
+   "email": "s.azhagappan@gmail.com",
+   "phone": "(+49) 17671056136",
+   "region": "Europe",
+   "time": "Friday, August 7th from 6:30pm onwards",
+   "venue": "ÜberQuell Restaurant & Brauerei, St. Pauli Fischmarkt 28-32, 20359 Altona, Germany",
+   "registration": "",
+   "notes": "",
+   "lat": 53.5463,
+   "lng": 9.95855,
+   "precise": true
+  },
+  {
    "city": "Helsinki",
    "volunteer": "Karthik Suresh, Sameer Saral",
    "email": "karthik.satthapan@gmail.com, sameersaral@yahoo.com",
    "phone": "(+358) 50 4323887, (+358) 504406704",
    "region": "Europe",
-   "time": "Sunday, 16th August at 12.00 pm",
+   "time": "Saturday, August 22nd at 12.00 pm",
    "venue": "Haltia - The Finnish Nature Centre, Nuuksiontie 84, 02820 Espoo, Finland",
    "registration": "",
    "notes": "",
@@ -581,12 +595,12 @@
    "phone": "(+91) 98294 06900",
    "region": "Europe",
    "time": "",
-   "venue": "x",
+   "venue": "",
    "registration": "",
    "notes": "",
-   "lat": -32.02225,
-   "lng": -63.96987,
-   "precise": true
+   "lat": 48.20835,
+   "lng": 16.3725,
+   "precise": false
   },
   {
    "city": "Ahmedabad",
@@ -1779,6 +1793,20 @@
    "precise": false
   },
   {
+   "city": "San Diego, CA",
+   "volunteer": "Rasmi Kapuganti",
+   "email": "mukularasmi@gmail.com",
+   "phone": "+1 585-285-0966",
+   "region": "US/Canada",
+   "time": "Friday, August 7th from 5:30 PM to 9:00 PM",
+   "venue": "Societe Brewing Company, 8262 Clairemont Mesa Blvd, San Diego, CA 92111, United States",
+   "registration": "",
+   "notes": "",
+   "lat": 32.83389,
+   "lng": -117.14638,
+   "precise": true
+  },
+  {
    "city": "San Francisco - Music Nite",
    "volunteer": "Bhanu Matta, Visarg Soneji",
    "email": "bhanu.matta@bitsaa.org, visarg.soneji@bitsaa.org",
@@ -1929,10 +1957,22 @@
    "email": "Pranavkocheta07@gmail.com"
   },
   {
+   "company": "Cisco",
+   "city": "Bangalore",
+   "volunteer": "Abhinav jagan polimera",
+   "email": "apolimer@cisco.com"
+  },
+  {
    "company": "Daimler Truck",
    "city": "Bangalore",
    "volunteer": "Nandhini",
    "email": "nandhini.ganesanmba@gmail.com"
+  },
+  {
+   "company": "Google",
+   "city": "Bangalore",
+   "volunteer": "animesh jain",
+   "email": "animeshj2010@gmail.com"
   },
   {
    "company": "Groww",
@@ -2137,6 +2177,12 @@
    "city": "Hyderabad",
    "volunteer": "Sai Sashank Narayanam",
    "email": "s4sashank95@gmail.com"
+  },
+  {
+   "company": "Kore.ai",
+   "city": "Hyderabad",
+   "volunteer": "Kushal Rathi",
+   "email": "kushal.rathi@bitsaa.org"
   },
   {
    "company": "Silicon Labs",
