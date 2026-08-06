@@ -1490,13 +1490,13 @@
    "email": "shobna.varma@gmail.com",
    "phone": "+1 614-937-8322",
    "region": "US/Canada",
-   "time": "Saturday, 8th August Time: TBD",
-   "venue": "TBD",
+   "time": "Saturday, 8th August Time: 6PM",
+   "venue": "Awadh | India Restaurant - 2584 Bethel Road, Columbus, OH - 43220",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-columbus-oh/",
    "notes": "",
-   "lat": 39.96226,
-   "lng": -83.00071,
-   "precise": false
+   "lat": 40.06673,
+   "lng": -83.08747,
+   "precise": true
   },
   {
    "city": "Dallas, TX",
