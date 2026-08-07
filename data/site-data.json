@@ -342,13 +342,13 @@
    "email": "dubey.atharva@outlook.com",
    "phone": "(+91) 95739 58634",
    "region": "Europe",
-   "time": "",
-   "venue": "",
+   "time": "Sunday, August 9th at 1pm",
+   "venue": "Chaakoo Bombay Cafe, 117 Lothian Rd, Edinburgh EH3 9AN",
    "registration": "",
    "notes": "",
-   "lat": 55.95335,
-   "lng": -3.18837,
-   "precise": false
+   "lat": 55.94607,
+   "lng": -3.20528,
+   "precise": true
   },
   {
    "city": "Frankfurt, Germany",
@@ -827,7 +827,7 @@
    "precise": false
   },
   {
-   "city": "16th August, 11:00 AM",
+   "city": "Dehradun",
    "volunteer": "Shubham Gupta",
    "email": "shubham2490@gmail.com",
    "phone": "(+91)9599665612",
@@ -843,7 +843,7 @@
   {
    "city": "Delhi NCR",
    "volunteer": "Atul Bhargava, Suraj Gupta",
-   "email": ",suraj.gupta@bitsaa.org",
+   "email": "atbhargava64@gmail.com, suraj.gupta@bitsaa.org",
    "phone": "(+91) 9910217882, (+91) 7030170768",
    "region": "India",
    "time": "Sunday, August 9th from 7PM onwards",
@@ -1098,7 +1098,7 @@
    "email": "",
    "phone": "(+91) 9022173108",
    "region": "India",
-   "time": "",
+   "time": "Sunday, August 9th from 1pm to 3pm",
    "venue": "Anandha Inn Convention Centre and Suites, No -154, Sardar Vallabbhai Patel Salai, Thiruvalluvar Nagar, Puducherry, 605001",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-pondicherry/",
    "notes": "",
@@ -1182,7 +1182,7 @@
    "email": "srikant.yse@gmail.com",
    "phone": "(+91) 8374450105",
    "region": "India",
-   "time": "Friday, August 7th, from 6 PM onward",
+   "time": "Friday, August 7th, from 6 PM onwards",
    "venue": "Treebo Premium Pl Grand, Visakhapatnam, Waltair Uplands, Siripuram, Visakhapatnam, Andhra Pradesh, India",
    "registration": "https://www.bitsaa.org/e/bitsian-s-day-2026-visakhapatnam/",
    "notes": "",
@@ -1233,18 +1233,18 @@
    "precise": false
   },
   {
-   "city": "KAUST, Saudi Arabia",
-   "volunteer": "Amit Kumar Subudhi, Viren",
-   "email": "amit.subudhi@kaust.edu.sa",
-   "phone": "(+966 55013 7745)",
+   "city": "Riyadh, Saudi Arabia",
+   "volunteer": "Ajit Reddy",
+   "email": "ajitreddy@gmail.com",
+   "phone": "(+966) 554097119",
    "region": "Middle East",
-   "time": "",
-   "venue": "",
+   "time": "Friday, August 7th from 1pm onwards",
+   "venue": "Barbeque Nation – Tahliah St, Unite No : 2/A, Tahliah St, Prince Mohammed Bin Abdul Aziz Road, Building No : 4710,6934,12243, Ground Floor, Riyadh 13325, Saudi Arabia",
    "registration": "",
    "notes": "",
-   "lat": 22.32238,
-   "lng": 39.11738,
-   "precise": false
+   "lat": 24.63892,
+   "lng": 46.71601,
+   "precise": true
   },
   {
    "city": "Kuwait",
@@ -1252,13 +1252,13 @@
    "email": "2015ht74108@alumni.bits-pilani.ac.in, jeswanth.pendyala@gmail.com",
    "phone": "(+965) 9716 0191, (+965) 9558 2637",
    "region": "Middle East",
-   "time": "",
-   "venue": "",
+   "time": "Thursday. 6th August",
+   "venue": "3209, Jumeirah Messilah Beach, Al Ta’awun Street, Kuwait, Kuwait City 13036, Kuwait",
    "registration": "",
    "notes": "",
-   "lat": 29.2734,
-   "lng": 47.49795,
-   "precise": false
+   "lat": 29.37965,
+   "lng": 47.97342,
+   "precise": true
   },
   {
    "city": "Muscat, Oman",
@@ -1407,12 +1407,12 @@
    "phone": "+1 404-229-8156",
    "region": "US/Canada",
    "time": "Saturday, 8th August from 7PM onwards",
-   "venue": "Venue TBA soon",
+   "venue": "Taco Mac Perimeter, 1211 Ashford Crossing, Atlanta, GA 30346",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-atlanta-ga/",
    "notes": "",
    "lat": 33.75447,
    "lng": -84.38982,
-   "precise": false
+   "precise": true
   },
   {
    "city": "Austin, TX",
@@ -1462,13 +1462,13 @@
    "email": "ajay45m1@gmail.com",
    "phone": "+1 639-916-0202",
    "region": "US/Canada",
-   "time": "",
-   "venue": "",
-   "registration": "",
+   "time": "Saturday, August 8th from 12pm to 3pm",
+   "venue": "Cinnamon Indian Cuisine & Bar, 3022 23 St NE, Calgary, AB T2E 8R7, Canada",
+   "registration": "https://www.bitsaa.org/e/bitsians-day-2026-calgary/",
    "notes": "",
-   "lat": 51.04561,
-   "lng": -114.05754,
-   "precise": false
+   "lat": 51.0765,
+   "lng": -114.0051,
+   "precise": true
   },
   {
    "city": "Chicago, IL",
@@ -1602,13 +1602,27 @@
    "email": "vedant.bajaj.2025@anderson.ucla.edu",
    "phone": "+1 310-266-9186",
    "region": "US/Canada",
-   "time": "US/Canada",
+   "time": "",
    "venue": "Mess Hall at FLIGHT, 1705 Flight Wy, Tustin, CA 92782, United States",
    "registration": "",
    "notes": "",
    "lat": 33.70508,
    "lng": -117.83858,
    "precise": true
+  },
+  {
+   "city": "Memphis, TN",
+   "volunteer": "Abhigna Reddy Musku",
+   "email": "muskuabhignareddy@gmail.com",
+   "phone": "+1 857-413-0938",
+   "region": "US/Canada",
+   "time": "Saturday, August 8th around 5-6pm",
+   "venue": "",
+   "registration": "https://chat.whatsapp.com/CEwIOWlEVrO7A0J6Wb7yIx",
+   "notes": "",
+   "lat": 35.14603,
+   "lng": -90.05178,
+   "precise": false
   },
   {
    "city": "Miami, FL",
@@ -1628,7 +1642,7 @@
    "city": "Minneapolis,MN",
    "volunteer": "Vikram Saini, Samyak Jain",
    "email": "saini.vikram@gmail.com, samyak.jain@bitsaa.org",
-   "phone": "+1 651-442-9454, +1 507-319-5073",
+   "phone": "+1 507-319-5073",
    "region": "US/Canada",
    "time": "Friday, August 7th, 2026, 7:00-10:00 PM",
    "venue": "The Market At Malcolm Yards, 501 30th Ave SE, Minneapolis, MN 55414",
@@ -1786,7 +1800,7 @@
    "region": "US/Canada",
    "time": "",
    "venue": "",
-   "registration": "",
+   "registration": "https://www.bitsaa.org/e/bitsians-day-2026-salt-lake-city-utah/",
    "notes": "",
    "lat": 40.75962,
    "lng": -111.8868,
@@ -1856,7 +1870,7 @@
    "region": "US/Canada",
    "time": "Friday, 7th August, 6:30 pm onwards",
    "venue": "Taj Indian Cuisine, 2734 E Fowler Ave, Tampa, FL 33612, United States",
-   "registration": "",
+   "registration": "https://www.bitsaa.org/e/bitsians-day-2026-tampa-fl/",
    "notes": "",
    "lat": 28.05457,
    "lng": -82.4288,
@@ -1910,13 +1924,13 @@
    "email": "sivasathya@gmail.com",
    "phone": "+1 484-515-6305",
    "region": "US/Canada",
-   "time": "TBA soon",
-   "venue": "TBC soon",
-   "registration": "",
-   "notes": "",
-   "lat": 38.8951,
-   "lng": -77.03638,
-   "precise": false
+   "time": "Aug 09, 2026, Sunday, 10:00 am",
+   "venue": "Great Falls Park, 9200 Old Dominion Dr, McLean, VA 22102",
+   "registration": "https://www.bitsaa.org/e/bitsians-day-2026-washington-d-c/",
+   "notes": "Reg fees (includes snacks and lunch): $25 per Adult (> 14 years), $15 per Kid (≤ 14 years)",
+   "lat": 38.94599,
+   "lng": -77.20914,
+   "precise": true
   }
  ],
  "companyMeets": [
