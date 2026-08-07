@@ -244,13 +244,13 @@
    "email": "ankitwalani@gmail.com",
    "phone": "(+34) 694460134",
    "region": "Europe",
-   "time": "",
-   "venue": "",
+   "time": "Sunday, 9th August at 6 pm",
+   "venue": "Rda. de Sant Antoni, 41, Eixample, 08011 Barcelona",
    "registration": "",
    "notes": "",
-   "lat": 41.38258,
-   "lng": 2.17707,
-   "precise": false
+   "lat": 41.38266,
+   "lng": 2.16338,
+   "precise": true
   },
   {
    "city": "Berlin, Germany",
