@@ -1435,11 +1435,11 @@
    "phone": "+1 479-721-0639",
    "region": "US/Canada",
    "time": "Friday, 7th August 6pm to 10pm",
-   "venue": "Pedlar's pub - 500 S Main St, Bentonville, AR 72712",
+   "venue": "Pedlar's pub, 500 S Main St, Bentonville, AR 72712",
    "registration": "https://www.bitsaa.org/e/bitsians-day-2026-nwa-northwest-arkansas/",
    "notes": "",
-   "lat": 36.37286,
-   "lng": -94.20879,
+   "lat": 36.36665,
+   "lng": -94.20947,
    "precise": true
   },
   {
@@ -1468,6 +1468,20 @@
    "notes": "",
    "lat": 51.0765,
    "lng": -114.0051,
+   "precise": true
+  },
+  {
+   "city": "Charlotte, NC",
+   "volunteer": "Dheeraj Reddy",
+   "email": "dhrjsimha@gmail.com",
+   "phone": "+1 470-272-5646",
+   "region": "US/Canada",
+   "time": "Saturday, August 8th from 6pm onwards",
+   "venue": "Suffolk Punch Brewing - SouthPark, 4400 Sharon Rd Spc G23D, Charlotte, NC 28211, United States",
+   "registration": "",
+   "notes": "",
+   "lat": 35.16834,
+   "lng": -80.78958,
    "precise": true
   },
   {
@@ -1723,7 +1737,7 @@
    "precise": false
   },
   {
-   "city": "Philadelphia",
+   "city": "Philadelphia, PA",
    "volunteer": "Vishal Ugle",
    "email": "vishalugle@gmail.com",
    "phone": "+1 (513) 302-7696",
