@@ -39,6 +39,8 @@
       <button class="nav-link" data-tab="company">Companies</button>
       <button class="nav-link" data-tab="institute">Campuses</button>
       <button class="nav-link" data-tab="initiatives">Initiatives</button>
+      <button class="nav-link" data-tab="sponsors">Sponsors</button>
+      <button class="nav-link" data-tab="founders">Founders</button>
       <button class="nav-link" data-tab="merch">Merch</button>
       <button class="nav-link" data-tab="social">Social</button>
       <button class="nav-link" data-tab="contact">Contact</button>
@@ -222,6 +224,83 @@
       <div class="feature-grid" id="featuredGrid"></div>
     </section>
 
+    <!-- SPONSORS -->
+    <section class="tab-panel" id="sponsors" data-tab="sponsors">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Partners</p>
+          <h2>Silver Jubilee offers</h2>
+        </div>
+      </div>
+      <div class="sponsors-banner">
+        <img src="assets/sponsors-banner.jpg" alt="BITSians' Day 2026 Silver Jubilee Offers banner" />
+      </div>
+      <div class="sponsors-hero">
+        <div>
+          <p class="sponsors-intro">Exclusive partner perks for the BITS community, featuring offers from Antara by TRIKA, SNAK., OBS Experiences and Gemnomads.</p>
+        </div>
+        <a class="btn btn-outline" href="#founders" data-tab="founders">Read the founders speech</a>
+      </div>
+      <div class="sponsor-grid">
+        <article class="sponsor-card sponsor-antara">
+          <span class="sponsor-kicker">Featured partner</span>
+          <h3>Antara by TRIKA</h3>
+          <p>Partner perks designed for the BITS community.</p>
+        </article>
+        <article class="sponsor-card sponsor-snak">
+          <span class="sponsor-kicker">Featured partner</span>
+          <h3>SNAK.</h3>
+          <p>Silver Jubilee offers and community specials.</p>
+        </article>
+        <article class="sponsor-card sponsor-obs">
+          <span class="sponsor-kicker">Featured partner</span>
+          <h3>OBS Experiences</h3>
+          <p>Experiences and offers for BITSians' Day celebrations.</p>
+        </article>
+        <article class="sponsor-card sponsor-gemnomads">
+          <span class="sponsor-kicker">Featured partner</span>
+          <h3>Gemnomads</h3>
+          <p>Special community offers for BITS alumni and families.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOUNDERS -->
+    <section class="tab-panel" id="founders" data-tab="founders">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Founders</p>
+          <h2>Founders' speech</h2>
+        </div>
+      </div>
+      <div class="founders-shell">
+        <div class="founders-copy">
+          <p class="founders-intro">Read the founders' message directly on the site. This view uses the middle three pages of the PDF and skips the cover and closing pages for a cleaner reading flow.</p>
+          <div class="founders-actions">
+            <a class="btn btn-primary" href="assets/founders-speech.pdf" target="_blank" rel="noopener">Open PDF</a>
+            <a class="btn btn-outline" href="assets/founders-speech.pdf" download>Download PDF</a>
+          </div>
+        </div>
+        <div class="founders-reader" aria-label="Founders speech text">
+          <article class="founders-page">
+            <div class="founders-page-head"><span class="founders-page-number">Page 1 of 3</span></div>
+            <p>Anupendra, wrote to his Economics 87 classmates seeking to raise money to put a chair in the name of our classmate and wingie, S S Seshadri who had died by suicide a few years earlier. Venu who lived in NJ decided we should do a music nite fundraiser. So we pulled in Sandeep, who was the musical talent amongst us three. We had no money and many loans, but Venu put $6000 on his credit card to hold the location. While we were pulling this event together, 9/11 happened and Vamsi Pendyala died taking his boss’s seat on an earlier flight. And the event caught fire. Some people who showed up on October 13, 2001 had survived the towers. That night BITSAA as a global, alumni powered organization was born.</p>
+            <p>Twenty-five years ago, a simple desire to honor a fallen friend ignited a spark that would forever change our global community.</p>
+          </article>
+          <article class="founders-page">
+            <div class="founders-page-head"><span class="founders-page-number">Page 2 of 3</span></div>
+            <p>Between the three of us we brought three key ingredients that made BITSAA grow. Venu had an encyclopedic knowledge and ability to reach BITSians anywhere. Sandeep had incredible fundraising and “fun-creating” skills to organize events and power our causes. Anupendra built databases, online groups and organized people into areas of their interest to achieve their own goals.</p>
+            <p>What began as a small idea turned into a revolution thanks to eventually thousands of volunteers in over fifty cities around the world. Together we all launched countless initiatives and the impact of a lot of what was built is visible now twenty five years later. There are so many incredible leaders who powered this engine and helped grow it.</p>
+          </article>
+          <article class="founders-page">
+            <div class="founders-page-head"><span class="founders-page-number">Page 3 of 3</span></div>
+            <p>BITSAA has always first been about the BITS Family. That tragedy of losing Sesha shook us and we did not want it to happen again. We wanted the community to know we are here when there is trouble. This is what makes BITSAA the world’s most unique alumni organization.</p>
+            <p>As we celebrate 25 years of connections, and baton has passed from us to millennials and GenZ, we ask everyone to remain connected to the community, to always lend a hand to another BITSian, mess worker, faculty member, administrator or someone who made our journey to and after BITS so meaningful, and to help propel each others professional and personal dreams. Here is to the bonds that unite us, the twenty five years or more of history we share, and to the greatest alumni network on the planet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- MERCH -->
     <section class="tab-panel" id="merch" data-tab="merch">
       <div class="panel-head">
@@ -249,6 +328,7 @@
           <h3>what’s trending..</h3>
           <span class="wall-count">Live from social</span>
         </div>
+        <!-- Place <div> tag where you want the feed to appear -->
         <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
       </div>
     </section>
@@ -300,6 +380,8 @@
       <button data-tab="map">Map</button>
       <button data-tab="city">City Meets</button>
       <button data-tab="company">Companies</button>
+      <button data-tab="sponsors">Sponsors</button>
+      <button data-tab="founders">Founders</button>
       <button data-tab="contact">Contact</button>
     </nav>
     <div class="foot-social">
@@ -321,16 +403,22 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-  <script src="assets/data.js?v=1786178906"></script>
+  <script src="assets/data.js?v=1786181791"></script>
   <script src="assets/app.js?v=20"></script>
-  <!-- Curator.io live hashtag feed loader -->
+  <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
   <script type="text/javascript">
-    /* curator-feed-default-feed-layout */
-    (function () {
-      var i, e, d = document, s = "script";
-      i = d.createElement("script"); i.async = 1; i.charset = "UTF-8";
-      i.src = "https://cdn.curator.io/published/0e92239d-6674-4817-a14c-56a70977cf2e.js";
-      e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e);
-    })();
+  /* curator-feed-default-feed-layout */
+  (function(){
+  var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+  i.src="https://cdn.curator.io/published/60be05db-698b-494e-94de-03c3cfd33ccd.js";
+  e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+  })();
+
+  /* curator-feed-default-feed-layout (legacy account) */
+  (function(){
+  var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+  i.src="https://cdn.curator.io/published/0e92239d-6674-4817-a14c-56a70977cf2e.js";
+  e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+  })();
   </script></body>
 </html>

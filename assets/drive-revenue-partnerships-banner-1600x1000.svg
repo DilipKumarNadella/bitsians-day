@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Drive Revenue and Partnerships for BITSAA</title>
+  <desc id="desc">Initiative banner in 16:10 ratio for BITSAA.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#380007"/>
+      <stop offset="52%" stop-color="#a5041d"/>
+      <stop offset="100%" stop-color="#23070c"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.86" cy="0.1" r="0.8">
+      <stop offset="0%" stop-color="#ffd47f" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffd47f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f5cf85" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#f5cf85" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#f5cf85" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#sun)"/>
+
+  <g opacity="0.17" fill="none" stroke="#ffdca4" stroke-width="2.5">
+    <path d="M0 760 C300 700, 620 800, 960 720 C1200 660, 1420 720, 1600 690"/>
+    <path d="M0 815 C350 740, 700 840, 1040 775 C1290 710, 1460 780, 1600 760"/>
+    <path d="M0 705 C320 640, 640 730, 960 665 C1220 610, 1430 660, 1600 640"/>
+  </g>
+
+  <g transform="translate(125,210)">
+    <text x="0" y="0" fill="#f6d79b" font-family="'Playfair Display', Georgia, serif" font-size="48" font-weight="700" letter-spacing="3.5">
+      BITSAA INITIATIVE
+    </text>
+    <rect x="0" y="36" width="980" height="4" fill="url(#gold)"/>
+
+    <text x="0" y="200" fill="#ffffff" font-family="'Playfair Display', Georgia, serif" font-size="100" font-weight="700">
+      Drive Revenue and
+    </text>
+    <text x="0" y="320" fill="#ffffff" font-family="'Playfair Display', Georgia, serif" font-size="100" font-weight="700">
+      Partnerships for BITSAA
+    </text>
+
+    <text x="0" y="405" fill="#f6d79b" font-family="'DM Sans', Arial, sans-serif" font-size="36" font-weight="500" letter-spacing="1.1">
+      Building strategic collaborations to power alumni impact and long-term growth.
+    </text>
+  </g>
+</svg>
