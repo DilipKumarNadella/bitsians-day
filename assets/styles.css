@@ -320,43 +320,67 @@ body {
 .clamp { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
 
 /* ---------- Sponsors / Founders ---------- */
-.sponsors-banner {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  background: var(--white);
-  margin-bottom: 22px;
-}
-.sponsors-banner img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 .sponsors-hero {
   display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap;
   margin: 0 0 24px; padding: 18px 22px; border-radius: var(--radius);
   border: 1px solid rgba(192, 0, 30, 0.12); background: linear-gradient(135deg, #fff7f8, #fff);
 }
-.sponsors-intro { color: var(--muted); font-size: 15px; max-width: 760px; }
-.sponsor-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 18px; }
+.sponsors-intro { color: var(--muted); font-size: 15px; max-width: 840px; }
+.sponsor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
 .sponsor-card {
-  position: relative; min-height: 190px; display: flex; flex-direction: column; justify-content: flex-end;
-  padding: 22px; border-radius: var(--radius); overflow: hidden; color: var(--white);
-  box-shadow: var(--shadow); border: 1px solid rgba(255,255,255,0.1);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--red);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 18px 16px;
 }
-.sponsor-card::before {
-  content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.62));
+.sponsor-card:nth-child(4n + 1) {
+  background: linear-gradient(135deg, #e9fbfd 0%, #ffffff 72%);
+  border-left-color: #0b7285;
 }
-.sponsor-card > * { position: relative; z-index: 1; }
-.sponsor-kicker { display: inline-block; align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; background: rgba(255,255,255,0.18); margin-bottom: 12px; }
-.sponsor-card h3 { font-family: var(--font-display); font-weight: 700; font-size: 28px; line-height: 1.05; margin-bottom: 8px; }
-.sponsor-card p { font-size: 14.5px; color: rgba(255,255,255,0.92); max-width: 300px; }
-.sponsor-antara { background: radial-gradient(circle at top left, rgba(70, 225, 223, 0.4), transparent 35%), linear-gradient(135deg, #031d2a, #0a5a66 70%, #0d2c3a); }
-.sponsor-snak { background: radial-gradient(circle at top right, rgba(255, 122, 89, 0.35), transparent 34%), linear-gradient(135deg, #3e0700, #9e1a0a 70%, #5d1406); }
-.sponsor-obs { background: radial-gradient(circle at top left, rgba(244, 185, 66, 0.28), transparent 34%), linear-gradient(135deg, #2f1f08, #8a5a12 72%, #46300d); }
-.sponsor-gemnomads { background: radial-gradient(circle at top right, rgba(143, 123, 255, 0.3), transparent 34%), linear-gradient(135deg, #24143c, #5a3b9a 72%, #2d2051); }
+.sponsor-card:nth-child(4n + 2) {
+  background: linear-gradient(135deg, #fff1ef 0%, #ffffff 72%);
+  border-left-color: #b42318;
+}
+.sponsor-card:nth-child(4n + 3) {
+  background: linear-gradient(135deg, #fff7e1 0%, #ffffff 72%);
+  border-left-color: #a16207;
+}
+.sponsor-card:nth-child(4n + 4) {
+  background: linear-gradient(135deg, #f1ebff 0%, #ffffff 72%);
+  border-left-color: #6d28d9;
+}
+.sponsor-card:nth-child(4n + 1) h3 { color: #0b4d5a; }
+.sponsor-card:nth-child(4n + 2) h3 { color: #8c1d13; }
+.sponsor-card:nth-child(4n + 3) h3 { color: #8a5a0a; }
+.sponsor-card:nth-child(4n + 4) h3 { color: #4b1d8f; }
+.sponsor-card h3 { font-family: var(--font-display); font-weight: 700; font-size: 28px; line-height: 1.05; margin-bottom: 10px; color: var(--charcoal); }
+.sponsor-card p { font-size: 14.5px; color: var(--muted); }
+.sponsor-card a { color: var(--red); }
+
+.sponsors-eligibility,
+.sponsors-eligibility {
+  margin-top: 20px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+}
+.sponsors-eligibility h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--charcoal);
+}
+.sponsors-eligibility ol {
+  padding-left: 20px;
+  color: var(--muted);
+}
+.sponsors-eligibility li { margin-bottom: 6px; }
+.sponsors-eligibility a { color: var(--red); }
+.sponsors-eligibility p { color: var(--muted); margin-top: 8px; }
 .founders-shell {
   display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 22px; align-items: start;
 }
@@ -376,6 +400,16 @@ body {
 .founders-page-head {
   display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 18px;
 }
+.founders-page-image {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 18px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+}
 .founders-page-number {
   display: inline-flex; align-items: center; justify-content: center;
   padding: 5px 11px; border-radius: 999px; background: var(--red-soft); color: var(--red);
@@ -388,6 +422,9 @@ body {
 @media (max-width: 980px) {
   .founders-shell { grid-template-columns: 1fr; }
   .founders-copy { position: static; }
+}
+@media (max-width: 720px) {
+  .founders-page-image { max-width: 100%; margin-bottom: 14px; }
 }
 
 /* ---- Social wall ---- */
@@ -446,8 +483,8 @@ body {
 .curator-wall .crt-post { cursor: pointer; }
 @media (max-width: 720px) {
   .social-steps, .social-platforms { grid-template-columns: 1fr; }
-  .sponsors-banner { margin-bottom: 18px; }
   .sponsors-hero { padding: 16px 18px; }
+  .sponsor-card h3 { font-size: 24px; }
   .founders-page { padding: 22px 20px; }
   .founders-page p { font-size: 15px; line-height: 1.8; }
 }
