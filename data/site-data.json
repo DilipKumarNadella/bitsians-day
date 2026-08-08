@@ -1644,13 +1644,13 @@
    "email": "muskuabhignareddy@gmail.com",
    "phone": "+1 857-413-0938",
    "region": "US/Canada",
-   "time": "Saturday, August 8th around 5-6pm",
-   "venue": "",
+   "time": "Sunday, August 9th at 6pm",
+   "venue": "Booya's | Mexican, 954 W Poplar Ave, Collierville, TN 38017",
    "registration": "https://chat.whatsapp.com/CEwIOWlEVrO7A0J6Wb7yIx",
    "notes": "",
-   "lat": 35.14603,
-   "lng": -90.05178,
-   "precise": false
+   "lat": 35.04629,
+   "lng": -89.69336,
+   "precise": true
   },
   {
    "city": "Miami, FL",
