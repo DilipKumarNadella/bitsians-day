@@ -2489,16 +2489,16 @@
    "link": "https://forms.gle/czujrUwLeqDB9fHY8"
   },
   {
-   "name": "BITSAA Sahaaya",
-   "image": "assets/img/1rWyAsAVVptKC5vuOMpKnZcTQ6t5kfzrs.jpg",
-   "team": "BITSAA Sahaaya Team",
+   "name": "Drive Revenue and Partnerships for BITSAA",
+   "image": "",
+   "team": "BITSAA",
    "community": "",
-   "poc": "",
-   "pocEmail": "sahaaya@bitsaa.org",
+   "poc": "Nikita Sadhnani",
+   "pocEmail": "nikita.sadhnani@bitsaa.org",
    "description": "",
-   "resources": "https://www.youtube.com/playlist?list=PLPqw4804uxoFnTDpvzDDuPh89Bcu96wNJ",
-   "moreInfo": "https://www.bitsaa.org/d/stories",
-   "link": "https://www.bitsaa.org/page/sahaaya"
+   "resources": "",
+   "moreInfo": "https://www.bitsaa.org/page/endowments",
+   "link": ""
   },
   {
    "name": "Register on BITSAA",
@@ -2535,6 +2535,18 @@
    "resources": "",
    "moreInfo": "",
    "link": ""
+  },
+  {
+   "name": "BITSAA Sahaaya",
+   "image": "assets/img/1rWyAsAVVptKC5vuOMpKnZcTQ6t5kfzrs.jpg",
+   "team": "BITSAA Sahaaya Team",
+   "community": "",
+   "poc": "",
+   "pocEmail": "sahaaya@bitsaa.org",
+   "description": "",
+   "resources": "https://www.youtube.com/playlist?list=PLPqw4804uxoFnTDpvzDDuPh89Bcu96wNJ",
+   "moreInfo": "https://www.bitsaa.org/d/stories",
+   "link": "https://www.bitsaa.org/page/sahaaya"
   }
  ],
  "merchandise": [
