@@ -1588,13 +1588,13 @@
    "email": "",
    "phone": "+1 812-955-9352",
    "region": "US/Canada",
-   "time": "",
-   "venue": "",
+   "time": "Saturday August 8th from 1pm",
+   "venue": "Curry leaf Indian fusion kitchen, 8505 Keystone Crossing Ste A, Indianapolis, IN 46240",
    "registration": "",
    "notes": "",
    "lat": 39.76833,
    "lng": -86.15835,
-   "precise": false
+   "precise": true
   },
   {
    "city": "Louisville, KY",
@@ -1622,6 +1622,20 @@
    "notes": "",
    "lat": 33.70508,
    "lng": -117.83858,
+   "precise": true
+  },
+  {
+   "city": "Madison",
+   "volunteer": "Ayushi Dubal",
+   "email": "ardubal@wisc.edu",
+   "phone": "",
+   "region": "US/Canada",
+   "time": "Saturday, August 15th from 4pm",
+   "venue": "James Madison Park, 614 E Gorham St, Madison, WI 53703",
+   "registration": "https://chat.whatsapp.com/D1uXJooAtMZBzkk3iDMhFr",
+   "notes": "",
+   "lat": 43.08163,
+   "lng": -89.38213,
    "precise": true
   },
   {
